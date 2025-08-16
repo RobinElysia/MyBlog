@@ -1,15 +1,75 @@
 # RSDBlog
 
-## ä»‹ç»
-ä¸‰ä¸ªäººçš„åšå®¢
+## ÏîÄ¿½éÉÜ
+RSDBlog ÊÇÒ»¸ö»ùÓÚ VitePress ¹¹½¨µÄ¶àÈË²©¿ÍÆ½Ì¨£¬Ö§³Ö Markdown Ğ´×÷£¬Ìá¹©ÁË¼ò½àÓÅÑÅµÄÔÄ¶ÁÌåÑé¡£
 
-## åšå®¢ç¯å¢ƒæ­å»ºæ•™ç¨‹
+## ¹¦ÄÜÌØµã
+-  Ö§³Ö Markdown Ğ´×÷
+-  ¼ò½àÏÖ´úµÄÉè¼Æ·ç¸ñ
+-  »ùÓÚ VitePress ¹¹½¨£¬¼ÓÔØÑ¸ËÙ
+-  Ö§³Ö¶àÈËĞ­×÷
+-  È«ÎÄËÑË÷¹¦ÄÜ
+-  ÏìÓ¦Ê½Éè¼Æ£¬Ö§³ÖÒÆ¶¯¶Ë·ÃÎÊ
 
-## ä½¿ç”¨æ•™ç¨‹
+## ¿ìËÙ¿ªÊ¼
 
-1. gitä¸‹è½½
-2. pnpm init
-3. å†™ä¸œè¥¿
-4. æ‰“åŒ…ï¼špnpm docs:build
-5. ä¿®æ”¹pyæ–‡ä»¶çš„æœ¬åœ°è·¯å¾„
-6. ä¸Šä¼ æœåŠ¡å™¨
+### »·¾³ÒªÇó
+- Node.js 16.0 »òÒÔÉÏ°æ±¾
+- pnpm °ü¹ÜÀíÆ÷
+- Git
+
+### °²×°²½Öè
+1. ¿ËÂ¡ÏîÄ¿´úÂë
+   ```bash
+   git clone https://github.com/RobinElysia/MyBlog.git
+   cd MyBlog
+   ```
+
+2. °²×°ÒÀÀµ
+   ```bash
+   pnpm install
+   ```
+
+3. ±¾µØ¿ª·¢
+   ```bash
+   pnpm docs:dev
+   ```
+
+4. ¹¹½¨¾²Ì¬ÎÄ¼ş
+   ```bash
+   pnpm docs:build
+   ```
+
+## Ğ´×÷Ö¸ÄÏ
+1. ÔÚ `docs/posts` Ä¿Â¼ÏÂ´´½¨ĞÂµÄ Markdown ÎÄ¼ş
+2. °´ÕÕÒÔÏÂ¸ñÊ½Ìí¼ÓÎÄÕÂÔªÊı¾İ£º
+   ```markdown
+   ---
+   title: ÎÄÕÂ±êÌâ
+   date: YYYY-MM-DD
+   author: ×÷ÕßÃû
+   tags: [±êÇ©1, ±êÇ©2]
+   ---
+   ```
+3. Ê¹ÓÃ Markdown Óï·¨±àĞ´ÎÄÕÂÄÚÈİ
+
+## ²¿ÊğÖ¸ÄÏ
+1. ¹¹½¨ÏîÄ¿
+   ```bash
+   pnpm docs:build
+   ```
+2. ½«Éú³ÉµÄ¾²Ì¬ÎÄ¼ş²¿Êğµ½·şÎñÆ÷
+3. ÅäÖÃ·şÎñÆ÷»·¾³£¨ÈçÓĞĞèÒª£©
+
+## ¹±Ï×Ö¸ÄÏ
+1. Fork ±¾ÏîÄ¿
+2. ´´½¨ÄúµÄÌØĞÔ·ÖÖ§ (git checkout -b feature/AmazingFeature)
+3. Ìá½»ÄúµÄ¸ü¸Ä (git commit -m "Add some AmazingFeature")
+4. ÍÆËÍµ½·ÖÖ§ (git push origin feature/AmazingFeature)
+5. ´ò¿ªÒ»¸ö Pull Request
+
+## Î¬»¤Õß
+- [@RobinElysia](https://github.com/RobinElysia)
+
+## ¿ªÔ´Ğ­Òé
+±¾ÏîÄ¿²ÉÓÃ MIT Ğ­Òé£¬ÏêÇéÇë¼û [LICENSE](LICENSE) ÎÄ¼ş¡£
