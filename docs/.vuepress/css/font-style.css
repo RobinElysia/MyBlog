@@ -1,0 +1,49 @@
+/* 强调色块 */
+.highlight {
+    display: inline-block;
+    padding: 0.05em 0.15em;
+    border-radius: 0.3em;
+    background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* 渐变标题 */
+.gradient-title {
+    background: linear-gradient(90deg, #36d1c4 0%, #5b86e5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+/* 重要提示 */
+.note {
+    border-left: 2px solid #5b86e5;
+    background: #f0f6ff;
+    padding: 0.8em 0.5em;
+    margin: 0.5em 0;
+    font-weight: bold;
+    color: #2d3a4b;
+}
+
+/* 加粗强调 */
+.strong {
+    font-weight: 700;
+    color: #e17055;
+    letter-spacing: 0.5px;
+}
+
+.strongGreen {
+    font-weight: 700;
+    color: #7ae64f;
+    letter-spacing: 0.5px;
+}
+
+/* 渐变下划线 */
+.underline-gradient {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, #1ef775 0%, #dacd9a 100%);
+    border-image-slice: 1;
+    padding-bottom: 2px;
+    font-weight: bold;
+}

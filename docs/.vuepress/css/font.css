@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'RobinElysia';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/huati.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'qwp';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/common.woff2") format('woff2');
+}
