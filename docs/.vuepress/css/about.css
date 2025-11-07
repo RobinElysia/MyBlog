@@ -1,0 +1,339 @@
+/* 基础布局 */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 成员卡片 */
+.member-card {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+html:not(.dark) .member-card {
+    background: rgba(139, 135, 206, 0.25);
+    border: 1px solid rgba(79, 70, 229, 0.15);
+    box-shadow: 0 4px 20px rgba(148, 163, 184, 0.12),
+                inset 0 0 0 1px rgba(79, 70, 229, 0.1);
+}
+
+.member-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(99, 102, 241, 0.1),
+    rgba(79, 70, 229, 0.1)
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-2px);
+}
+
+html:not(.dark) .member-card:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(148, 163, 184, 0.2),
+              inset 0 0 0 1px rgba(79, 70, 229, 0.2);
+}
+
+.member-card:hover::before {
+  opacity: 1;
+}
+
+/* 成员头像 */
+.member-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  border: 3px solid transparent;
+  background: linear-gradient(135deg, #3EC8FF, #2AFC98) border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.member-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* 姓名和标题 */
+.member-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease;
+}
+
+html:not(.dark) .member-name {
+  background-image: linear-gradient(120deg, #bfbcec, #3b82f6);
+  text-shadow: 0 0 30px rgba(79, 70, 229, 0.2);
+}
+
+.member-title {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+html:not(.dark) .member-title {
+  color: rgba(106, 113, 123, 0.9);
+}
+
+/* 技能标签 */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.skill-tag {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+html:not(.dark) .skill-tag {
+  background: rgba(79, 70, 229, 0.05);
+  color: rgba(106, 113, 123, 0.9);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.skill-tag::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(99, 102, 241, 0.2) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+html:not(.dark) .skill-tag:hover {
+  background: rgba(79, 70, 229, 0.1);
+  border-color: rgba(79, 70, 229, 0.3);
+}
+
+.skill-tag:hover::before {
+  opacity: 1;
+}
+
+/* 内容区域 */
+.content-section {
+  margin: 3rem 0;
+  line-height: 1.8;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 85%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 50%;
+  background: linear-gradient(to bottom, #3EC8FF, #2AFC98);
+  border-radius: 2px;
+}
+
+/* 书籍列表 */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.book-item {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+html:not(.dark) .book-item {
+  background: rgba(248, 250, 252, 0.6);
+  color: rgba(51, 65, 85, 0.9);
+  border-color: rgba(79, 70, 229, 0.1);
+}
+
+.book-item:hover {
+  transform: translateY(-2px);
+}
+
+html:not(.dark) .book-item:hover {
+  background: rgba(248, 250, 252, 0.8);
+  border-color: rgba(79, 70, 229, 0.2);
+  box-shadow: 0 4px 20px rgba(148, 163, 184, 0.15);
+}
+
+.book-item:hover::before {
+  opacity: 1;
+}
+
+/* 书籍标题和元信息 */
+.book-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.4;
+}
+
+.book-meta {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+html.dark .book-meta {
+  color: rgba(226, 232, 240, 0.6);
+}
+
+html:not(.dark) .book-meta {
+  color: rgba(71, 85, 105, 0.8);
+}
+
+.book-meta > span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.book-meta svg {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.7;
+}
+
+/* 引用样式 */
+.quote {
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  position: relative;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+html:not(.dark) .quote {
+  background: rgba(248, 250, 252, 0.8);
+  border-left: 4px solid rgba(79, 70, 229, 0.5);
+  box-shadow: 0 4px 20px rgba(148, 163, 184, 0.1);
+  color: rgba(51, 65, 85, 0.9);
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-family: Georgia, serif;
+  transition: all 0.3s ease;
+}
+
+html:not(.dark) .quote::before {
+  background: linear-gradient(120deg, #4f46e5, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.3;
+}
+
+.quote:hover {
+  transform: translateY(-2px);
+}
+
+html:not(.dark) .quote:hover {
+  box-shadow: 0 6px 30px rgba(148, 163, 184, 0.15);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.2s;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+  
+  .member-card {
+    padding: 1.5rem;
+  }
+  
+  .member-name {
+    font-size: 1.8rem;
+  }
+  
+  .book-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

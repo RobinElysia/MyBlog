@@ -22,7 +22,6 @@ defineProps({
     >
       <header class="title">
         {{
-          (isTimeline ? `${new Date(info.date).toLocaleDateString()}: ` : '') +
           info.title
         }}
       </header>
@@ -33,92 +32,152 @@ defineProps({
         <span v-if="info.author" class="author">作者: {{ info.author }}</span>
 
         <span v-if="info.date && !isTimeline" class="date"
-          >时间: {{ new Date(info.date).toLocaleDateString() }}</span
+          >时间: {{ new Date(info.date).toLocaleDateString('zh').replaceAll('/', '-') }}</span
         >
 
         <span v-if="info.category" class="category"
-          >分类: {{ info.category.join(', ') }}</span
+          >作者: {{ info.category.join(', ') }}</span
         >
         <span v-if="info.tag" class="tag">标签: {{ info.tag.join(', ') }}</span>
 
       </div>
     </article>
   </div>
-  <div style="background:none;height: 5%;position: fixed;bottom: 0px;width: 100%;text-align: center;">
-    RobinElysia、叁玖、DLQC | Copyright © 2025 qwp Community | <a href="https://beian.miit.gov.cn/" target="_blank">辽ICP备2024040511号</a>
-  </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '@vuepress/theme-default/styles/mixins';
-@use '../css/font.css';
+@use '../public/css/font.css';
 
 .article-wrapper {
   font-family: RobinElysia, qwp;
   @include mixins.content-wrapper;
   padding-top: calc(var(--navbar-height) + 1rem) !important;
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .article {
   position: relative;
-
   box-sizing: border-box;
   width: 100%;
-  margin: 0 auto 1.25rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--vp-c-border);
-  border-radius: 0.4rem;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  background: var(--vp-c-bg);
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 
-  color: var(--vp-c-text);
-
-  text-align: start;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      #00C9FF,
+      #92FE9D
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
   @media (max-width: 419px) {
     border-radius: 0;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
   }
 
   &:hover {
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    
+    &::before {
+      opacity: 1;
+    }
   }
 
   .title {
     position: relative;
     display: inline-block;
-    font-size: 1.28rem;
-    line-height: 2rem;
-
-    &::after {
-      content: '';
-
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--vp-c-text);
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+    
+    &::before {
+      content: '#';
       position: absolute;
-      inset-inline-start: 0;
-      bottom: 0;
-
-      width: 100%;
-      height: 2px;
-
-      background: var(--vp-c-accent-bg);
-
-      visibility: hidden;
-
-      transition: transform var(--vp-t-transform);
-
-      transform: scaleX(0);
+      left: -1.5rem;
+      color: #00C9FF;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
-    &:hover::after {
-      visibility: visible;
+    &:hover {
+      color: #00C9FF;
+      
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
   .article-info {
     display: flex;
-    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
 
     > span {
-      margin-inline-end: 1em;
-      line-height: 2.5;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      background: var(--vp-c-bg-soft);
+      color: var(--vp-c-text-2);
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: #00C9FF;
+        color: #00C9FF;
+      }
+
+      &::before {
+        font-size: 0.8rem;
+      }
+
+      &.author::before {
+        content: '👤';
+      }
+
+      &.date::before {
+        content: '📅';
+      }
+
+      &.category::before {
+        content: '📁';
+      }
+
+      &.tag::before {
+        content: '🏷️';
+      }
     }
   }
 

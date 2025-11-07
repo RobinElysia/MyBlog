@@ -19,7 +19,7 @@ const timelines = useBlogType('timeline')
 </template>
 
 <style lang="scss">
-@use '../css/font.css';
+@use '../public/css/font.css';
 
 .timeline-title {
   padding-top: calc(var(--navbar-height) + 1rem) !important;

@@ -1,0 +1,121 @@
+@use '@vuepress/theme-default/styles/mixins';
+@use '../public/css/font.css';
+
+.category-wrapper {
+  @include mixins.content-wrapper;
+  padding-top: calc(var(--navbar-height) + 2rem) !important;
+  padding-bottom: 2rem !important;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  
+  &::before {
+    content: '文章分类';
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(120deg, #20bf55 0%, #01baef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+  }
+
+  .route-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .category {
+    font-family: RobinElysia, qwp;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--vp-c-bg-soft);
+    border: 2px solid transparent;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, #20bf5580 0%, #01baef80 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: #01baef40;
+      
+      &::before {
+        opacity: 0.1;
+      }
+
+      .category-num {
+        background: #01baef;
+        color: white;
+        transform: scale(1.1);
+      }
+    }
+
+    @media (max-width: 419px) {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+
+    .category-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--vp-c-bg);
+      color: var(--vp-c-text-2);
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    &.route-link-active {
+      background: linear-gradient(120deg, #20bf55 0%, #01baef 100%);
+      color: white;
+      border-color: transparent;
+      transform: translateY(-2px);
+      box-shadow: 
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+      .category-num {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+
+      &:hover {
+        filter: brightness(1.1);
+        .category-num {
+          background: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+}

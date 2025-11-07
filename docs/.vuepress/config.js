@@ -2,12 +2,14 @@ import { blogPlugin } from '@vuepress/plugin-blog'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 
 export default defineUserConfig({
   lang: 'en-US',
 
   title: "RSD's Blog",
   description: "RSD's blog is a personal blog of three people.",
+  head: [['link', { rel: 'icon', href: './assets/img/Rlogo.png' }]],
 
   theme: defaultTheme({
     logo: './assets/img/Rlogo.png',
@@ -135,7 +137,10 @@ export default defineUserConfig({
       ],
       hotReload: true,
     }),
+    markdownMathPlugin({
+      type: 'mathjax', // 使用 MathJax 进行渲染
+      delimiters: 'all'
+    }),
   ],
-
   bundler: viteBundler(),
 })
