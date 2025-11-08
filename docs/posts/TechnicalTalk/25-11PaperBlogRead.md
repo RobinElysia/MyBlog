@@ -29,6 +29,9 @@ tag:
 ## Preference
 
 ### Paper
+&emsp;10. [使用生成式AI系统去技能化和提升技能Deskilling and upskilling with generative AI systems](https://crowston.syr.edu/sites/crowston.syr.edu/files/GAI_and_skills.pdf)
+> 1. 技能进行再培训、提升，并开发出更适合人工智能的新型、更有效的批判性思维框架
+> 2. 支持客户服务人员的聊天机器人使经验较少的操作员能够在更有经验的操作员的水平上工作。但其他应用程序似乎对更有经验的用户更强大，即不是去技能化，而是提高技能。
 
 ### Communications/Blog
 
@@ -76,3 +79,13 @@ tag:
 > 4. Arora 提到了 DeepMind 的 AlphaGeometry 和 AlphaProof，以及他自己在普林斯顿语言与智能实验室开发的哥德尔证明器。2023 年，AlphaGeometry 无需人类演示即可解决国际数学奥林匹克 (IMO) 级别的几何问题。AlphaProof 则专注于更通用的形式数学推理，而不仅仅是几何，并在 2024 年达到了 IMO 银牌标准。今年，OpenAI 和 Google 的模型达到了 IMO 金牌标准。
 > 5. 今年早些时候，人工智能初创公司 Morph Labs 宣布其人工智能在将英文证明翻译成 Lean 语言方面取得了重大进展，这为打造超人般的人工智能数学家铺平了道路。数学家陶哲轩和 Alex Kontorovich 一直试图将强素数定理翻译成 Lean 语言，他们原以为这项工作需要数年时间才能完成，但借助名为 Gauss 的人工智能工具，Morph Labs 仅用了三周时间就做到了。
 > 6. 但请记住，这种数学超级智能并不意味着它完美无缺，而只是比人类更胜一筹。”
+
+&emsp;9. [人工智能技能下降悖论The AI Deskilling Paradox](https://cacm.acm.org/news/the-ai-deskilling-paradox/)
+> 1. 知识工作者认为生成式人工智能让工作看起来更容易。但问题在于：研究人员发现，他们实际上是将解决问题的专业知识拱手让给了系统，转而专注于收集和整合反馈等功能性任务。与此同时，他们对使用人工智能也变得更加自信。“对人工智能的高度信任很可能导致感知到的工作量降低，”李说道。
+> 2. [人工智能工作总结](https://ai-2027.com/summary)、[人工智能2027](https://ai-2027.com/)
+
+&emsp;11. [重新构想分析：流媒体争夺观众忠诚度的关键环节Reimagining Analytics: The Missing Link in Streaming’s Battle for Audience Loyalty](https://cacm.acm.org/blogcacm/reimagining-analytics-the-missing-link-in-streamings-battle-for-audience-loyalty/)
+> 1. 更深入的洞察，平台正在整合行为信号、情感分析和发现模式，贯穿内容分发和互动工作流程。这些更丰富的数据有助于解答一些关键问题：哪些内容能够建立情感联系？哪些信号可以预测用户流失？平台如何在用户离开之前进行干预？
+> 2. PREDICT（模式识别、风险评分、早期干预、专属支持、个性化服务、持续优化、投资回报率追踪）等框架正逐渐成为分析驱动型规划的标准配置。
+
+&emsp;12. [过去的计算机技术突破能教会我们哪些关于人工智能的知识？What Past Computing Breakthroughs Teach Us About AI](https://cacm.acm.org/blogcacm/what-past-computing-breakthroughs-teach-us-about-ai/)
