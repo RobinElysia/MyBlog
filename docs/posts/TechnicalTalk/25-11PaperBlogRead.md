@@ -17,7 +17,6 @@ head:
 category:
   - RobinElysia
 tag:
-  - 技术漫谈
   - 浅读文章
 
 ---
@@ -32,6 +31,11 @@ tag:
 &emsp;10. [使用生成式AI系统去技能化和提升技能Deskilling and upskilling with generative AI systems](https://crowston.syr.edu/sites/crowston.syr.edu/files/GAI_and_skills.pdf)
 > 1. 技能进行再培训、提升，并开发出更适合人工智能的新型、更有效的批判性思维框架
 > 2. 支持客户服务人员的聊天机器人使经验较少的操作员能够在更有经验的操作员的水平上工作。但其他应用程序似乎对更有经验的用户更强大，即不是去技能化，而是提高技能。
+
+&emsp;20. [RAG 之所以有效，有一部分原因是它似乎可以看作是一种隐式微调](https://arxiv.org/abs/2212.10559)
+> 1. ICL是一种类似于显示训练（微调）、所以我们叫它隐式微调
+> 2. 提出基于动量的注意力机制、优于最传统的香草注意力机制
+> 3. 我们找出了变形金刚注意力和梯度下降之间的双重形式，并将ICL解释为元优化的过程。我们分析了上下文学习和显式优化之间的联系，并建议将ICL理解为隐式优化。我们提供了几行经验证据，从多个角度证明ICL和显式优化是相似的。我们设计了基于动量的注意力并验证了其有效性，这再次支持了我们对元优化的理解，并显示了我们的理解对未来模型设计的启发潜力。
 
 ### Communications/Blog
 
@@ -89,3 +93,37 @@ tag:
 > 2. PREDICT（模式识别、风险评分、早期干预、专属支持、个性化服务、持续优化、投资回报率追踪）等框架正逐渐成为分析驱动型规划的标准配置。
 
 &emsp;12. [过去的计算机技术突破能教会我们哪些关于人工智能的知识？What Past Computing Breakthroughs Teach Us About AI](https://cacm.acm.org/blogcacm/what-past-computing-breakthroughs-teach-us-about-ai/)
+
+&emsp;13. [人工智能疲劳：对人工智能快速发展所带来的人性影响的反思AI Fatigue: Reflections on the Human Side of AI’s Rapid Advancement](https://cacm.acm.org/opinion/ai-fatigue-reflections-on-the-human-side-of-ais-rapid-advancement/)
+> 1. “人工智能疲劳”是指个人和组织因人工智能（AI）持续快速发展而产生的集体疲惫感。它反映了人们为了适应这种前所未有的快速变化而承受的心理、情感和运营压力，这种变化已经持续了相对较长的时间（数年），而且几乎没有放缓的迹象。在某种程度上，它承认了人工智能的发展速度极其惊人，而适应这种变化需要付出代价，我们所有人都必须清楚地认识到这一点。
+> 2. 首先，研究成果数量惊人——仅2024年12月，arXiv上的投稿量就超过21,000篇¹，其中人工智能相关类别的论文就超过6,000篇。即使每天花四个小时阅读这些论文，也只能读完已发表研究的8%。
+> 3. “应急能力”的概念——人类在极度紧张的情况下为短期生存而调动的一系列适应性心理和生理系统，——有助于解释人工智能领域普遍存在的疲惫感。应急能力最初是在自然灾害和新冠疫情的背景下提出的，它适用于终点明确的冲刺式场景。然而，当前的人工智能革命带来了一个独特的挑战：它要求持续的冲刺式投入，而且没有明确的终点线。
+> 4. 冒充者综合征（Impostor syndrome），又称自我能力否定倾向，是保琳（Pauline R. Clance）和苏珊娜（Suzanne A. Imes）在1978年发现并命名的，是指个体按照客观标准评价为已经获得了成功或取得成就，但是其本人却认为这是不可能的，他们没有能力取得成功，感觉是在欺骗他人
+
+&emsp;14. [GenAI：交战规则GenAI: Rules of Engagement](https://cacm.acm.org/blogcacm/genai-rules-of-engagement/)
+> 1. 我们想强调的是，当时的现实世界无法适应用户的需求；用户只能按照图书馆的既定布局进入和使用。所以现在我们要问：如果取消这些限制，用户会失去什么？我们不再假设“最好的”GenAI工具是能够让用户快速找到答案的工具，而是要问：提高用户注意力会产生什么影响——我们的互动规则是什么？
+
+&emsp;15. [利用模拟受众测试数据故事Testing Data Stories with Simulated Audiences](https://cacm.acm.org/blogcacm/testing-data-stories-with-simulated-audiences/)
+> 1. 是否有可能利用生成式人工智能来预测不同的受众群体对数据故事的反应，甚至在与他们分享之前就做出预测？
+> 2. 我们通常把人工智能看作内容创作者：撰写文本、生成图像、谱写音乐。但如果我们反过来呢？与其让人工智能讲述故事，不如让它聆听故事。换句话说，我们可以将人工智能用作模拟观众：一个能够像特定类型的读者或观众一样对数据故事做出反应的替代者。这并非要取代真人，而是为了在进行真人测试之前，尽早获得洞察，并了解不同类型的受众可能会如何反应。
+
+&emsp;16. [揭秘人工智能工具、人工智能代理和代理工作流程Demystifying AI Tools, AI Agents, and Agentic Workflows](https://cacm.acm.org/blogcacm/demystifying-ai-tools-ai-agents-and-agentic-workflows/)
+
+&emsp;17. [网络架构的连续体The Continuum of Network Architecture](https://cacm.acm.org/blogcacm/the-continuum-of-network-architecture/)
+> 1. 每一种架构都建立在前一种架构的基础上：人工智能原生系统仍然依赖于分组交换底层架构和云原生编排。它们共同扩展了网络的功能：从僵化的传输系统到可编程的弹性平台，如今又朝着整合这三者的智能基础设施迈进。
+> 2. 下一代架构以云原生系统的可编程性和弹性为基础，将认知能力嵌入到架构本身。虽然云原生网络实现了工作负载的自动扩展和编排，但它们仍然主要以被动响应为主，在拥塞或阈值出现后才做出反应。随着应用程序向自主系统、实时控制和分布式人工智能推理演进，这种被动响应模式已无法满足需求。
+> 3. AI原生网络以分布式智能扩展了这些基础，使网络不仅能够执行意图，还能理解和预测意图。抽象概念从工作负载扩展到智能（或代理）工作负载，这些自主实体能够感知上下文、推理意图并与对等节点协调。代理并非工作负载的替代品，而是其智能演化：能够实时感知、决策和行动的工作负载。
+
+&emsp;18. [为什么尼采在人工智能时代仍然重要Why Nietzsche Matters in the Age of Artificial Intelligence](https://cacm.acm.org/blogcacm/why-nietzsche-matters-in-the-age-of-artificial-intelligence/)
+
+&emsp;19. [将机器学习集成到物理安全架构中Integrating Machine Learning into Physical Security Architecture](https://cacm.acm.org/blogcacm/integrating-machine-learning-into-physical-security-architecture/)
+
+&emsp;21. [智能眼镜的崛起The Rise of Smart Glasses](https://cacm.acm.org/news/the-rise-of-smart-glasses/)
+
+&emsp;22. [让数字孪生预测您的心脏健康状况Let a Digital Twin Predict Your Heart’s Health](https://cacm.acm.org/news/let-a-digital-twin-predict-your-hearts-health/)
+
+&emsp;23. [Researchers Are Hiding AI Prompts in Their Papers研究人员在论文中隐藏人工智能提示](https://cacm.acm.org/news/researchers-are-hiding-ai-prompts-in-their-papers/)
+> 1. “这表明，目前这种做法主要集中在特定的研究领域，很可能是计算机科学领域，因为这些领域对快速注射的技术知识更为丰富，”他说。
+> 2. 论文造假
+> 3. 首先，提交门户网站需要使用自动筛查来检测速效注射。其次，出版商必须为作者和审稿人制定明确的人工智能使用政策。“第三，也是最重要的一点，我们需要从结构上改变科学论文本身，使其能够被机器阅读，让人工智能成为验证和复现研究结果的工具，而不是被操纵的目标，”林说道。他最新的研究表明，论文需要同时吸引两类读者：人类读者和人工智能系统。
+> 4. 

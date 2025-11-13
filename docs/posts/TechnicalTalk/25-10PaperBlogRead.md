@@ -17,7 +17,6 @@ head:
 category:
   - RobinElysia
 tag:
-  - 技术漫谈
   - 浅读文章
 
 ---
