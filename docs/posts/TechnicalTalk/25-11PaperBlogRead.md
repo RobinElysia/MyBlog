@@ -166,3 +166,13 @@ tag:
 > 2. 有趣的是，研究还发现，经验更丰富的员工更能免受人工智能带来的颠覆性影响。
 > 3. 近期内有必要在全校范围内开设“人人皆可使用的人工智能”课程
 > 4. 虽然很多学校都在推出人工智能课程、专业和教学大纲，但很少有学校重新思考学生需要学习什么才能在人工智能优先的劳动力市场中取得成功。
+
+&emsp; 31. [A Message to the Computing Community About ACM’s Transition to Full Open Access](https://cacm.acm.org/news/a-message-to-the-computing-community-about-acms-transition-to-full-open-access/)
+> 1. 好耶，免费了
+
+&emsp; 32. [通过大规模合作研究推进农业人工智能发展Advancing AI in Agriculture through Large-Scale Collaborative Research](https://cacm.acm.org/federal-funding-of-academic-research/advancing-ai-in-agriculture-through-large-scale-collaborative-research/)
+> 1. 五个联邦政府资助的人工智能研究所为以农业为重点的人工智能研究提供了支撑。
+
+&emsp; 33. [模拟已灭绝物种Simulating Extinct Species](https://cacm.acm.org/news/simulating-extinct-species/)
+> 1. 一些理论认为，翼龙起飞时像鸟类一样，后腿站立。另一种假说则提出，它们四肢着地，分三步跃起，这种起飞方式与蝙蝠的起飞方式有部分相似之处。
+> 2. “很多时候，真正限制我们的是计算机资源，因为如果一个模拟需要运行一周时间，就很难在可行的时间内对其进行迭代并使其运行得更好，”福尔金厄姆说。“但随着知识的积累和计算机性能的提升，我看到模型变得越来越复杂。”
