@@ -104,7 +104,7 @@ margin: 0 auto;" />
 
 &emsp;还有关于 CACM 和其他的一些期刊的内容，比如关于[RAG与提示词微调的Paper](https://arxiv.org/abs/2212.10559)，隐式和显示微调，RAG本质是微调的一种；[Rediscovering Reinforcement Learning](https://cacm.acm.org/federal-funding-of-academic-research/rediscovering-reinforcement-learning/)ACM 图灵奖得主，一篇研究者的自述，蛮不错的；[The Path to a Superhuman AI Mathematician](https://cacm.acm.org/news/the-path-to-a-superhuman-ai-mathematician/)，关于AI 能否成为一个 AI 数学家，提到的 Lean 语言我觉得很有意思；[Testing Data Stories with Simulated Audiences](https://cacm.acm.org/blogcacm/testing-data-stories-with-simulated-audiences/)，使用 AI 反推用户情绪，进而改进自身等等...
 
-&emsp;剩下的就是机器学习相关的内容了，这部分和英语一样鸽了，暂且放到 12 月后再说。不过有趣的是，这部分实践是以大模型为主，所以很大程度上我顺带会学一下相关的第三方库“Tensorflow、Pytorch、Transformer...”，有机器学习的一部分底子，一些专有名词和理解还是蛮轻松的，比如 ***Mate 的 Faiss 向量数据库，使用的内积和 L2范式索引、聚类倒排索引、量化聚类倒排索引等等***。这部分知识在机器学习的无监督聚类学习有一部分涉及，范式概念在机器学习的一些章节我进行了恶补，量化虽说没涉及，但是感觉有点类似于根据聚类的压缩？应该是的，最起码 Faiss 是这么设计的[](https://www.aidoczh.com/faiss/docs/indexes/faiss-indexes)。（有机会一定去买华章的数学系列丛书，听说这部分丛书的权威程度不亚于计算机丛书）。机器学习的进度仍在“特征选择和稀疏学习”，个人笔记文档还在“贝叶斯网”（实在是太艰难了...）
+&emsp;剩下的就是机器学习相关的内容了，这部分和英语一样鸽了，暂且放到 12 月后再说。不过有趣的是，这部分实践是以大模型为主，所以很大程度上我顺带会学一下相关的第三方库“Tensorflow、Pytorch、Transformer...”，有机器学习的一部分底子，一些专有名词和理解还是蛮轻松的，比如 ***Mate 的 Faiss 向量数据库，使用的内积和 L2范数索引、聚类倒排索引、量化聚类倒排索引等等***。这部分知识在机器学习的无监督聚类学习有一部分涉及，范数概念在机器学习的一些章节我进行了恶补，量化虽说没涉及，但是感觉有点类似于根据聚类的压缩？应该是的，最起码 Faiss 是这么设计的[](https://www.aidoczh.com/faiss/docs/indexes/faiss-indexes)。（有机会一定去买华章的数学系列丛书，听说这部分丛书的权威程度不亚于计算机丛书）。机器学习的进度仍在“特征选择和稀疏学习”，个人笔记文档还在“贝叶斯网”（实在是太艰难了...）
 
 ## 最后
 &emsp;12 号的时候，我的朋友告诉我 Kimi 出了 AI 砍价活动，如果你能打动 AI，你就能将 49 元的 pro 版价格砍刀 0.99。于是我的好朋友给出了类似于以下提示词：
