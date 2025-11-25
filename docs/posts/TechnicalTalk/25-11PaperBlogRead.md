@@ -40,6 +40,12 @@ tag:
 &emsp;30. [Working with AI: Measuring the Applicability of Generative AI to Occupations与人工智能合作：衡量生成式人工智能在职业中的适用性](https://arxiv.org/abs/2507.07935)
 > 1. 分析人们使用人工智能开展的工作活动、这些活动的成功程度和覆盖范围，并结合从事这些活动的职业数据，朝着这一目标迈出一步。我们分析了一个包含20万条用户与微软Bing Copilot（一个公开可用的生成式人工智能系统）之间匿名化和隐私清理对话的数据集。我们发现，人们寻求人工智能帮助的最常见工作活动包括信息收集和写作，而人工智能本身执行的最常见活动包括提供信息和帮助、写作、教学和咨询。结合这些活动分类以及任务成功率和影响范围的衡量指标，我们计算了每个职业的人工智能适用性得分。我们发现，知识型职业群体（例如计算机和数学、办公室和行政支持）以及销售等工作活动涉及提供和沟通信息的职业，其人工智能适用性得分最高。此外，我们还描述了最成功执行的工作活动类型、工资和教育与人工智能适用性的相关性，以及现实世界的使用情况与职业人工智能影响的预测相比如何。
 
+&emsp;42. [人类和机器智能中的快与慢思考Thinking Fast and Slow in Human and Machine Intelligence](https://dl.acm.org/doi/10.1145/3715709)
+> 1. 双重处理理论 (Dual-Process Theory)、神经符号AI (Neuro-Symbolic AI)、元认知 (Metacognition)、SOFAI架构。
+> 2. 作者借鉴了人类的两种认知方式：系统1 (System 1 - Fast): 直觉的、快速的、无意识的。在AI中对应于深度学习、强化学习或基于启发式的快速反应器。优点是快，缺点是可能不精确或缺乏可解释性；系统2 (System 2 - Slow): 逻辑的、缓慢的、深思熟虑的。在AI中对应于符号推理、规划（Planning）、搜索算法。优点是精确、逻辑严密，缺点是计算昂贵、速度慢。
+> 3. 提出Fast and slow AI：多模态求解器 (Solvers): 系统底层拥有多个“快速求解器”（S1）和“慢速求解器”（S2）。元认知代理 (Metacognitive Agent): 这是SOFAI的核心创新点。它充当“大脑的指挥官”，负责：监控 (Monitoring): 评估当前任务的难度和状态；评估与选择 (Assessment & Selection): 决定当前问题应该用“快思考”处理（如果问题熟悉或简单），还是调用“慢思考”（如果问题新颖或复杂）；仲裁 (Arbitration): 在不同求解器之间进行切换或组合。
+> 4. 人类在初学驾驶时（System 2）需要高度集中注意力，动作缓慢；熟练后（System 1）则变为下意识反应。SOFAI 模拟了这一过程：系统通过 System 2（慢速推理）解决难题后，可以将解决方案“内化”或训练给 System 1。随着时间推移，AI 处理相同类型任务的速度会变快，不再需要每次都调用昂贵的推理资源。
+
 ### Communications/Blog
 
 &emsp;1. [答案引擎重新定义搜索Answer Engines Redefine Search](https://cacm.acm.org/news/answer-engines-redefine-search/)
@@ -161,36 +167,36 @@ tag:
 > 3. 微软与初创公司 Corintis（瑞士洛桑）合作开发了一种“微流体”设计，该设计使液体在芯片中循环，使冷却剂比冷板方法更接近热点。
 > 4. 另一种名为浸没式冷却的技术是将服务器直接浸入冷却液中。虽然这种方法被认为比芯片直接冷却更有效，但其普及应用通常还需要更长时间，部分原因是它偏离了传统的服务器设计；相比之下，冷板式液冷基本上可以与传统布局兼容。
 
-&emsp; 29. [高等教育准备好迎接人工智能了吗？Is Higher Education Ready for AI?](https://cacm.acm.org/news/is-higher-education-ready-for-ai/)
+&emsp;29. [高等教育准备好迎接人工智能了吗？Is Higher Education Ready for AI?](https://cacm.acm.org/news/is-higher-education-ready-for-ai/)
 > 1. 专家质疑学校是否在教授学生在人工智能主导的劳动力市场中所需的技能。
 > 2. 有趣的是，研究还发现，经验更丰富的员工更能免受人工智能带来的颠覆性影响。
 > 3. 近期内有必要在全校范围内开设“人人皆可使用的人工智能”课程
 > 4. 虽然很多学校都在推出人工智能课程、专业和教学大纲，但很少有学校重新思考学生需要学习什么才能在人工智能优先的劳动力市场中取得成功。
 
-&emsp; 31. [A Message to the Computing Community About ACM’s Transition to Full Open Access](https://cacm.acm.org/news/a-message-to-the-computing-community-about-acms-transition-to-full-open-access/)
+&emsp;31. [A Message to the Computing Community About ACM’s Transition to Full Open Access](https://cacm.acm.org/news/a-message-to-the-computing-community-about-acms-transition-to-full-open-access/)
 > 1. 好耶，免费了
 
-&emsp; 32. [通过大规模合作研究推进农业人工智能发展Advancing AI in Agriculture through Large-Scale Collaborative Research](https://cacm.acm.org/federal-funding-of-academic-research/advancing-ai-in-agriculture-through-large-scale-collaborative-research/)
+&emsp;32. [通过大规模合作研究推进农业人工智能发展Advancing AI in Agriculture through Large-Scale Collaborative Research](https://cacm.acm.org/federal-funding-of-academic-research/advancing-ai-in-agriculture-through-large-scale-collaborative-research/)
 > 1. 五个联邦政府资助的人工智能研究所为以农业为重点的人工智能研究提供了支撑。
 
-&emsp; 33. [模拟已灭绝物种Simulating Extinct Species](https://cacm.acm.org/news/simulating-extinct-species/)
+&emsp;33. [模拟已灭绝物种Simulating Extinct Species](https://cacm.acm.org/news/simulating-extinct-species/)
 > 1. 一些理论认为，翼龙起飞时像鸟类一样，后腿站立。另一种假说则提出，它们四肢着地，分三步跃起，这种起飞方式与蝙蝠的起飞方式有部分相似之处。
 > 2. “很多时候，真正限制我们的是计算机资源，因为如果一个模拟需要运行一周时间，就很难在可行的时间内对其进行迭代并使其运行得更好，”福尔金厄姆说。“但随着知识的积累和计算机性能的提升，我看到模型变得越来越复杂。”
 
-&emsp; 34. [帕斯卡林：历史性计算器拍卖取消Pascaline: Auction of Historical Calculating Machine Canceled](https://cacm.acm.org/blogcacm/pascaline-auction-of-world-famous-historical-calculating-machine-canceled/)
+&emsp;34. [帕斯卡林：历史性计算器拍卖取消Pascaline: Auction of Historical Calculating Machine Canceled](https://cacm.acm.org/blogcacm/pascaline-auction-of-world-famous-historical-calculating-machine-canceled/)
 > 1. 原定于2025年11月19日在巴黎举行的帕斯卡计算器拍卖会突然取消。相关行政法院在前一天发布了临时禁令，禁止出口这台举世闻名的历史性计算器。该计算器由法国数学家布莱兹·帕斯卡于1642年制造。佳士得拍卖行曾在纽约和香港展出过这台机器。帕斯卡计算器的估价在200万至300万欧元之间。据这家巴黎拍卖行称，它是迄今为止最重要的拍卖科学仪器。
 > 2. 第一台机械计算器是在 17 世纪开发的：威廉·希卡德于 1623 年发明的“计算钟”（现已不存），帕斯卡于 1642 年发明的加减法装置，以及戈特弗里德·威廉·莱布尼茨于 1673 年发明的计算器。
 > 3. 现存八台帕斯卡原版机器。它们分别位于巴黎工艺美术博物馆（一台六位数机器和两台八位数机器）、克莱蒙费朗亨利·勒科克博物馆（一台五位数机器和一台八位数机器）、德累斯顿数学物理沙龙（十位数机器）、纽约IBM公司（八位数机器）以及莱昂·帕尔塞的私人收藏（八位数机器）。
 
-&emsp; 35. [构建和实施网络弹性战略Building and Implementing Cyber Resilience Strategies](https://cacm.acm.org/blogcacm/building-and-implementing-cyber-resilience-strategies/)
+&emsp;35. [构建和实施网络弹性战略Building and Implementing Cyber Resilience Strategies](https://cacm.acm.org/blogcacm/building-and-implementing-cyber-resilience-strategies/)
 
-&emsp; 36. [个性化的影响On the Implications of Personalization](http://cacm.acm.org/opinion/on-the-implications-of-personalization/)
+&emsp;36. [个性化的影响On the Implications of Personalization](http://cacm.acm.org/opinion/on-the-implications-of-personalization/)
 > 1. 我们常说“信息茧房”，指的是接收者接收到的信息都是根据其个人偏好和信念量身定制的。确认偏差是这种做法的一个潜在后果。
 > 2. 如今互联网信息来源的多元化导致人们往往缺乏对事实的共同认知，并且由于缺乏共同的经验和公认的知识，更难找到共同点。我们今天在网络和现实生活中经常看到的那些分裂性的交流中，无疑能感受到这一点。
 
-&emsp; 37. [网络人文与遗产安全Cyber Humanities for Heritage Security](https://cacm.acm.org/research/cyber-humanities-for-heritage-security/)
+&emsp;37. [网络人文与遗产安全Cyber Humanities for Heritage Security](https://cacm.acm.org/research/cyber-humanities-for-heritage-security/)
 
-&emsp; 38. [在研究实验室中培养创新能力Cultivating Innovation in a Research Lab](http://cacm.acm.org/opinion/cultivating-innovation-in-a-research-lab/)
+&emsp;38. [在研究实验室中培养创新能力Cultivating Innovation in a Research Lab](http://cacm.acm.org/opinion/cultivating-innovation-in-a-research-lab/)
 > 1. Jeremy Roschelle 分享了他在施乐帕克研究中心学到的研究管理经验。
 > 2. (a) 高效交付高质量服务或产品的团队；(b) 在新兴技术领域进行创新并树立思想领导力的团队。
 > 3. JSB作为我的导师，展现出的一项才能令我惊叹不已：他能记住每位核心业务负责人正在处理的“棘手难题”，了解他们面临的障碍，以及可能带来突破的因素。
@@ -202,3 +208,19 @@ tag:
 > 9. 他们知道自身的声誉取决于他们的产出。正因为他们很容易理解这类指标，所以刻意追求特定的量化目标既没有必要，也并非特别有效。
 > 10. 在JSB的指导下，我经常出入PARC，那时我总是能感受到引人入胜的问题、意义非凡的探索和充满希望的研究方法带来的喜悦。有了这些要素贯穿始终，就无需胡萝卜加大棒了。研究人员和创新者拥有惊人的内在动力——事实上，有时候最好的办法就是劝他们出去散散步或者休息个周末，因为“睡一觉”往往能带来突破。
 > 11. 研究人员总体上比较内向，但当他们看到充满潜力且尚未充分开发的机遇空间时，他们会焕发出勃勃生机；当他们的想法所有权受到的威胁较小，同时又能与同事互补的见解和技能产生强烈的共鸣时；当他们拥有一个安全的空间，可以在尊重而又有力的反馈下发展自己的想法时，他们就会充满热情。作为一名管理者，我认为自上而下的指令，例如“多写提案！”或“多发表论文！”，虽然在极少数情况下是必要的，但作为工作重点，大多数时候都会适得其反。相反，关键在于培养一种对独特机遇的感知，简化建立新关系和团队的流程，并确保相关流程能够以尊重的方式提供富有洞察力的反馈。
+&emsp;39. [漏洞的重要性：回应Vulnerability Counts: A Rejoinder](https://cacm.acm.org/opinion/vulnerability-counts-a-rejoinder/)
+> 1. 漏洞数量还能继续发挥作用吗？因为它们肯定仍然具有一定的参考价值。Meneely 和 Keller 建议对“已报告漏洞”这一术语进行调整。这一建议看似合理，但却引发了更多问题。例如，测量结果表明，流行的开源软件项目往往比不太流行的项目拥有更多的已报告漏洞。一种可能的解释与所谓的“Linus 定律”有关，该定律指出，代码库的审查人数越多，报告和修复的漏洞就越多。测量结果和该定律都强化了这样一种观点：漏洞数量并不一定能衡量软件安全性，而是反映了其他因素，包括但不限于软件的流行度。
+
+&emsp;40. [预测Forecasting](https://cacm.acm.org/opinion/forecasting/)
+> 1. 何时才能相信模型的预测？仔细考察科学和工程领域中模型的预测应用，就会发现许多人工智能预测能力的宣称其实是错觉，反映了人们对预测的误解。
+> 2. 排队网络模型（QNM）是对所有物理服务器的简洁数学表示，每个服务器都包含其平均服务时间、访问次数、作业数（N）以及吞吐量。目前已设计出高效的计算算法，可以根据模型参数计算其吞吐量。大量的验证测试表明，QNM 计算出的吞吐量与实际吞吐量的误差在 5% 以内。大多数工程师认为这代表模型与实际系统之间高度吻合。他们相信 QNM 对服务器网络系统吞吐量的预测。
+> 3. 我们尝试的一种方法是招募人类来评估LLM（逻辑学习模型）的响应质量。然后，利用人类的评估结果来调整LLM的参数，以获得更令人满意的输出。这被称为基于人类反馈的强化学习（RLHF）
+> 4. 逻辑逻辑模型的响应中包含无意义或错误信息，这被称为“幻觉”。
+> 5. 一些支持者声称，一旦大型逻辑模型（LLM）整合了互联网上的所有数据，幻觉就会消失。这种说法毫无道理。最大的逻辑模型已经整合了绝大多数数据。无论规模大小，逻辑模型都无法分辨真假。
+> 6. 许多标注数据集来自低薪且未经培训的工人，他们并不了解自己标注的领域。换句话说，训练数据本身正变得越来越不可信。
+> 7. 每个 LLM 都依赖于嵌入式 ANN 作为推理引擎，用于计算对提示的响应。它利用提示生成最有可能出现的下一个词，然后将该词循环返回到提示中。这种嵌入方式被称为“循环神经网络”。它往往会放大低概率结果，并将 LLM 引导至幻觉。
+
+&emsp;41. [信任、治理和人工智能决策Trust, Governance, and AI Decision Making](https://cacm.acm.org/opinion/trust-governance-and-ai-decision-making/)
+> 1. 论文 Fast And Slow AI
+
+&emsp;43. [进程The Process](https://cacm.acm.org/opinion/the-process/)
