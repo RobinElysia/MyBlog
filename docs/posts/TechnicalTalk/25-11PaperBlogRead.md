@@ -224,3 +224,12 @@ tag:
 > 1. 论文 Fast And Slow AI
 
 &emsp;43. [进程The Process](https://cacm.acm.org/opinion/the-process/)
+
+&emsp;44. [从大学研究到全球影响From University Research to Global Impact](https://cacm.acm.org/federal-funding-of-academic-research/from-university-research-to-global-impact/)
+> 1. PageRank算法固然重要，但学术界或联邦政府资助下开发的许多其他创新也至关重要。互联网本身（基于TCP/IP协议）就源于联邦政府资助的研究，而网络浏览器则出自伊利诺伊州的国家超级计算应用中心，如果没有这些，搜索功能根本无法使用。再比如我们用来在服务器故障后选举新主服务器的Paxos分布式共识算法；它对于确保像Spanner这样的大型数据库的数据完整性至关重要。我们的广告排名机制受到了诺贝尔奖得主威廉·维克瑞提出的第二价格拍卖概念的启发。Pixel手机的摄像头则基于斯坦福大学开发的计算摄影方法。更不用说深度神经网络了，它在开始应用于实际之前经历了漫长的学术研究。所以很难从中挑选一个最重要的，因为影响实在太多了。
+
+&emsp;45. [TRIPS项目The TRIPS Project](https://cacm.acm.org/federal-funding-of-academic-research/the-trips-project/)
+> 1. 架构和编译器创新及其对研究和产业的影响。
+> 2. 值得研究的架构与编译器产物
+
+&emsp;46. [人工智能领域的身份盗窃会议同行评审Identity Theft in AI Conference Peer Review](https://cacm.acm.org/opinion/identity-theft-in-ai-conference-peer-review/)
