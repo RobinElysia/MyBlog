@@ -233,3 +233,14 @@ tag:
 > 2. 值得研究的架构与编译器产物
 
 &emsp;46. [人工智能领域的身份盗窃会议同行评审Identity Theft in AI Conference Peer Review](https://cacm.acm.org/opinion/identity-theft-in-ai-conference-peer-review/)
+
+&emsp;47. [超越基准：教育领域负责任的人工智能需要学习科学Beyond Benchmarks: Responsible AI in Education Needs Learning Sciences](https://cacm.acm.org/opinion/beyond-benchmarks-responsible-ai-in-education-needs-learning-sciences/)
+> 1. 倡导将学习科学家纳入开发过程，以理解理论和数据。
+
+&emsp;48. [加密生态系统正在走向（去）中心化吗？纵向分析框架Are Crypto Ecosystems (De)centralizing? A Framework for Longitudinal Analysis](https://cacm.acm.org/research/are-crypto-ecosystems-decentralizing-a-framework-for-longitudinal-analysis/)
+> 1. 非同质化代币（NFT）：同质化（数字货币）与非同质化（真实不可分财产），代币
+> 2. 在我们量化加密生态系统去中心化程度的框架中，我们提出了以下三个要素：1）时间维度，用于生成加密子系统随时间变化的面板数据；2）额外的生态系统层，用于捕捉具有重要经济意义的新兴子系统的演进；3）香农熵作为去中心化的通用度量，这对于严格量化和促进不同加密生态系统及其必要子系统之间的比较至关重要。
+> 3. 我们评估了多种指标——香农熵、节点数量、基尼系数、中本聪系数、赫芬达尔-赫希曼指数和雷尼熵——以及它们在特定应用场景中的独特优势和劣势。
+
+&emsp;49. [修补人工智能芯片中的漏洞Patching Vulnerabilities in AI Chips](https://cacm.acm.org/news/patching-vulnerabilities-in-ai-chips/)
+> 1. 修补人工智能芯片面临诸多挑战，而不修补则会带来网络安全风险。 
