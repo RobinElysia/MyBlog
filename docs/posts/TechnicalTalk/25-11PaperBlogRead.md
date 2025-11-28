@@ -244,3 +244,9 @@ tag:
 
 &emsp;49. [修补人工智能芯片中的漏洞Patching Vulnerabilities in AI Chips](https://cacm.acm.org/news/patching-vulnerabilities-in-ai-chips/)
 > 1. 修补人工智能芯片面临诸多挑战，而不修补则会带来网络安全风险。 
+
+&emsp;50. [我们需要向年轻的计算机工程师传授“因纽特人”的思维方式We Need to Teach the ‘Inuit’ Mindset to Young Computing Engineers](https://cacm.acm.org/blogcacm/we-need-to-teach-the-inuit-mindset-to-young-computing-engineers/)
+> 1. 一方面，得益于人工智能，编程从未如此容易上手；另一方面，由于硬件资源看似“免费”，人们也更容易忽视编程效率和基本原理。
+> 2. 思考：对于教育工作者：我们是否充分培养了年轻的程序员和未来的计算机工程师？对于学生开发者而言：在现有资源条件下，所提出的解决方案是否具有最高的计算效率？它是否能够适应变化或不利的条件？
+> 3. 关键在于，即便充分利用人工智能在编程方面的优势，过度依赖人工智能生成的解决方案以及过度配置资源，也会阻碍未来程序员或计算机科学家计算思维、逻辑思维和算法思维的正确发展。
+> 4. 这种思维有助于他们扎实掌握编程原理，从而开发出对自身运行机制有着深刻理解的应用程序，就像当年阿波罗计划的工程师们开发软件，最终使人类登月成为现实一样。这种视角不仅能提高效率，还能培养创造力和韧性，而这些特质在编程中至关重要。
