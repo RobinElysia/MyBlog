@@ -1,0 +1,79 @@
+---
+
+title: 十二月：论文、博客、通讯阅读
+description: 十二月：论文、博客、通讯阅读
+date: 2025-10-10
+timeline: true
+head:
+  - - meta
+    - name: keywords
+      content: 十二月：论文、博客、通讯阅读
+  - - meta
+    - name: description
+      content: 十二月：论文、博客、通讯阅读
+  - - meta
+    - name: author
+      content: RobinElysia
+category:
+  - RobinElysia
+tag:
+  - 浅读文章
+
+---
+
+<link rel="stylesheet" href="/css/font-style.css">
+
+<img src="/assets/img/MachineLearning/Voyager2.jpg" style="display: block;margin: 0 auto;" />
+
+## Preference
+
+### Paper
+
+&emsp;3. [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
+> 1. Transformer位置编码
+
+&emsp;4. [Online normalizer calculation for softmax](https://arxiv.org/abs/1805.02867)
+> 1. Transformer的Online Softmax
+
+&emsp;5. [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2303.15647)
+> 1. 2019年初至2024年中期发表的50余篇微调总结论文
+
+&emsp;7. [微型指针](https://arxiv.org/abs/2111.12800)
+
+### Communications/Blog
+
+&emsp;1. [如何成为jyy的学生](https://0xffff.one/d/1550) 
+
+&emsp;2. [正则表达式引发的血案](https://zhuanlan.zhihu.com/p/46294360)
+
+&emsp;3. [人格的力量The Power of Persona](https://cacm.acm.org/news/the-power-of-persona/)
+> 1. 随着人工智能代理和模型展现出越来越逼真的个性，一些研究人员呼吁设立防护措施。
+> 2. 并非所有的人格都是安全的，例如所谓的“黑暗三性格”——自恋、马基雅维利主义和精神病态。
+
+&emsp;6. [加速哈希表Speeding Up Hash Tables](http://cacm.acm.org/news/speeding-up-hash-tables/)
+> 1. 1972 年，斯坦福大学斯坦福·W·阿舍曼工程学教授（荣誉退休）杰弗里·乌尔曼推测，基于贪婪开放寻址哈希表的均匀探测（本质上是使用贪婪算法随机选择一系列槽位，一旦发现有可用槽位，就插入该元素）是最优的。
+> 2. Farach-Colton 说：“Iceberg 哈希表具有强大的数学特性，并且在实践中比之前的哈希表速度更快。” 他补充道：“在此基础上，Iceberg 哈希表真正发展出了微型指针。”
+> 3. 2021年11月，Iceberg哈希算法的作者发表了论文《微型指针》（Tiny Pointers），这篇论文为解决时间和空间问题带来了新的突破。该论文引入了一种新的数据结构对象——微型指针，它可以用来替代传统的指针。
+> 4. Farach-Colton解释说：“指针最初只有8位。随着计算机容量的增长，指针也随之增长；先是需要16位，然后是32位和64位。微型指针比传统指针占用更少的内存。”
+> 5. 后来，Krapivin 发现了一种新的、更优的哈希表结构，它推翻了 Yao 的猜想，但并未推翻 Ullman 的猜想，并且有望比以往的开放寻址哈希表实现更快的搜索速度。这一结果意义重大，但需要注意的是，一些其他类型的哈希表，例如不使用开放寻址的 Iceberg 表，其速度也比 Krapivin 构建的哈希表更快。此外，Tiny Pointers 考虑了数据元素的插入和删除，而 Krapivin 的结构只考虑了插入操作。
+> 6. Farach-Colton、Krapivin 和 Kuszmaul 合作，于 2025 年 1 月发表了一篇论文，并于 2025 年 2 月进行了更新，论文标题为“无需重排序的开放寻址的最优界限”。该论文旨在重新审视数据结构中最简单的问题之一：将元素插入开放寻址哈希表，以便以后可以用尽可能少的探测次数检索元素。
+> 7. 最终：结果表明，使用非贪婪哈希表可以构建一个空间效率和均摊预期查询时间都达到完美的哈希表：兼具两者的优势。第二个结果还获得了比任何贪婪算法都更优的最坏情况预期时间界限。
+> 8. 康威在评论克拉皮文的研究成果时表示：“虽然这类理论成果可能不会直接催生出最先进的哈希表设计，但它们能够帮助我们从根本上理解哈希表及其相关问题。这可以带来一些间接的应用，例如马赛克页中的微型指针。此外，理论成果还有助于解释哈希表中一些长期存在的未解之谜。”
+
+&emsp;8. [动画师和特效艺术家感受到了人工智能带来的生存危机Animators and Special-Effects Artists Feel Existential Pinch of GenAI](https://cacm.acm.org/news/animators-and-special-effects-artists-feel-existential-pinch-of-genai/)
+
+&emsp;9. [人类学家的自动化改进指南An Anthropologist’s Guide to Better Automation](https://cacm.acm.org/opinion/an-anthropologists-guide-to-better-automation/)
+
+&emsp;10. [在生成式人工智能时代，程序理解是计算机科学教育的核心技能Program Comprehension as a Central Skill in CS Education in the Era of Generative AI](http://cacm.acm.org/blogcacm/program-comprehension-as-a-central-skill-in-cs-education-in-the-era-of-generative-ai/)
+> 1. 对于学习者和专业人士而言，核心问题不再是“我能从头开始编写这段代码吗？”，而是“我是否足够理解这段代码，能够对其进行评估、调整和整合？”
+> 2. 在 GenAI 时代，关键技能不是编写代码，而是阅读、理解、评估和修复代码。因此，当学生要求 AI 工具“用 Python 实现快速排序”时，他们可能在几秒钟内得到正确答案，但他们真的能理解代码的本质吗？
+> 3. 随着学生越来越依赖人工智能生成代码，如果缺乏扎实的代码理解能力，他们将无法区分人工智能生成的正确代码和存在严重缺陷的代码。计算机科学教育者应该考虑将部分教学重点从代码编写转移到代码理解，并教导学生批判性地分析、调试和验证人工智能生成的解决方案。
+> 4. 教授程序等价性能够培养学生判断人工智能生成的代码是否正确、安全且符合其需求所需的关键理解能力。
+> 5. 停机问题（英语：halting problem）是逻辑数学中可计算性理论的一个问题。通俗地说，停机问题就是判断任意一个程序是否能在有限的时间之内结束运行的问题。
+> 6. 与其将GenAI视为对传统编程教学法的威胁，教育者不如将其视为机遇。3程序理解可以成为连接实践与理论、编码与概念的统一主题。
+> 7. 对于初学者来说，理解力可以确保他们不会被人工智能生成的代码所淹没，并为他们提供评估和学习的工具。
+> 8. 对于高级学生来说，理解力将日常编程挑战与等价性和不可判定性等更深层次的理论概念联系起来。
+> 9. 对于未来的专业人士而言，理解能力有助于培养在协作环境中维护、测试和集成代码所需的技能。
+> 10. 从这个意义上讲，程序理解能力并非取代编程技能，而是丰富编程技能。它将重点从代码的外观转移到代码的含义。
+
+&emsp;11. [当黑客不需要入侵你的时候When Hackers Don’t Need to Hack You](https://cacm.acm.org/blogcacm/when-hackers-dont-need-to-hack-you/)
