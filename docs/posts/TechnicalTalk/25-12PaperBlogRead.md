@@ -77,3 +77,9 @@ tag:
 > 10. 从这个意义上讲，程序理解能力并非取代编程技能，而是丰富编程技能。它将重点从代码的外观转移到代码的含义。
 
 &emsp;11. [当黑客不需要入侵你的时候When Hackers Don’t Need to Hack You](https://cacm.acm.org/blogcacm/when-hackers-dont-need-to-hack-you/)
+
+&emsp;12. [通过数字化统一构建弹性基础设施Resilient Infrastructures via Digital Unification](https://cacm.acm.org/opinion/resilient-infrastructures-via-digital-unification/)
+
+&emsp;13. [了解学习是如何运作的Learning How Learning Works](https://cacm.acm.org/news/learning-how-learning-works/)
+> 1. 信息局部性（相关词语彼此靠近）是语言对人类和机器都易于学习的重要特性。
+> 2. 对于小众语言，在数据量小的情况下，模型该如何学习
