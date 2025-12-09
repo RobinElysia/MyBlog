@@ -83,3 +83,10 @@ tag:
 &emsp;13. [了解学习是如何运作的Learning How Learning Works](https://cacm.acm.org/news/learning-how-learning-works/)
 > 1. 信息局部性（相关词语彼此靠近）是语言对人类和机器都易于学习的重要特性。
 > 2. 对于小众语言，在数据量小的情况下，模型该如何学习
+
+&emsp;14. [构建连续体：从分布式融合到人工智能原生网络演化的16种结构Engineering the Continuum: From Distributed Convergence to 16 Constructs for AI-Native Network Evolution](https://cacm.acm.org/blogcacm/engineering-the-continuum-from-distributed-convergence-to-16-constructs-for-ai-native-network-evolution/)
+
+&emsp;15. [软件团队实施 OKR 的挑战与陷阱Challenges and Pitfalls in Implementing OKRs in Software Teams](https://cacm.acm.org/blogcacm/challenges-and-pitfalls-in-implementing-okrs-in-software-teams/)
+> 1. OKR 在纸面上看似简单，实则难以有效实施。
+
+&emsp;16. [人工智能应该让工作感觉更好AI Should Make Work Feel Better](https://cacm.acm.org/blogcacm/ai-should-make-work-feel-better/)
