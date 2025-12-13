@@ -104,3 +104,8 @@ tag:
 > 1. 19世纪30年代和40年代摄影技术的进步开始挑战这一传统观念。起初，摄影似乎对画家构成了威胁。如果机器能够比人手更精确、更快速地记录世界，那么绘画还有什么意义呢？但随着时间的推移，摄影使绘画摆脱了再现现实的束缚。画家们不再需要与相机竞争，去复制现实。相反，他们可以专注于早期相机无法捕捉的微妙之处——光影的变幻、感知的质感以及对熟悉事物的全新诠释。摄影使绘画摆脱了写实主义的束缚，但更有趣的是，取而代之的是什么。
 > 2. 相机提供了廉价的复制品：大量的答案。印象派画家改变了框架，将艺术定位为提出更深刻问题的基础。
 > 3. 更重要的是保持好奇心并持续探究的能力。  正因如此，好的问题——即便代价不菲——才具有战略意义。好的问题能够拓展认知领域，重新定义问题。
+
+&emsp;20. [软件架构的演进正在消耗我们更多的能源。Evolution of Software Architecture is Costing Us More Energy](https://cacm.acm.org/blogcacm/evolution-of-software-architecture-is-costing-us-more-energy/)十分重要的一篇文章
+> 1. 计算机架构演进
+
+&emsp;21. [零日漏洞利用的危险性The Dangers of Zero-Day Exploits](https://cacm.acm.org/news/the-dangers-of-zero-day-exploits/)
