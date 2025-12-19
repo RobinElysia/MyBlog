@@ -109,3 +109,21 @@ tag:
 > 1. 计算机架构演进
 
 &emsp;21. [零日漏洞利用的危险性The Dangers of Zero-Day Exploits](https://cacm.acm.org/news/the-dangers-of-zero-day-exploits/)
+
+&emsp;22. [加强不断演进的人工智能代理的安全边界Strengthening Safety Boundaries for Evolving AI Agents](https://cacm.acm.org/blogcacm/strengthening-safety-boundaries-for-evolving-ai-agents/)
+
+&emsp;23. [众人拾柴火焰高：让边缘群体参与计算机调查研究It Takes A Village: Engaging Marginalized Groups in Computing Survey Research](https://cacm.acm.org/opinion/it-takes-a-village-engaging-marginalized-groups-in-computing-survey-research/)
+
+&emsp;24. [腐蚀法学硕士的新方法New Ways to Corrupt LLMs](https://cacm.acm.org/blogcacm/new-ways-to-corrupt-llms/)
+> 1. 事情从此变得更加奇怪，也更加可怕，出现了一种被称为“归纳后门”的新现象，这是语义泄漏更令人不安的应用
+
+&emsp;25. [人工智能抓取与开放网络AI Scraping and the Open Web](https://cacm.acm.org/opinion/ai-scraping-and-the-open-web/)
+
+&emsp;26. [虚拟协作Virtual Collaboration](https://cacm.acm.org/news/virtual-collaboration/)
+
+&emsp;27. [计算机年鉴The Year in Computer Science](https://www.quantamagazine.org/the-year-in-computer-science-20251216/)
+
+&emsp;28. [Sustainable Quantum Computing可持续量子计算](https://cacm.acm.org/research/sustainable-quantum-computing/)
+> 1. 量子计算生命周期中碳排放基准测试的机遇与挑战。
+
+&emsp;29. [Technical Perspective: Toward a Formally Verified Compiler for a Synchronous, Functional, Data-Flow Programming Language技术视角：面向同步函数式数据流编程语言的形式化验证编译器](https://cacm.acm.org/research-highlights/technical-perspective-toward-a-formally-verified-compiler-for-a-synchronous-functional-data-flow-programming-language/)
