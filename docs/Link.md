@@ -31,7 +31,7 @@ const friends = [
     name: '叁玖',
     avatar: '/assets/img/sanjiu.jpg',
     description: '密码学/加密研究者 | 网络安全',
-    link: 'http://sanjiuctf.cn/',
+    link: 'www.sanjiuctf.cn',
     tags: [
       { text: '密码学', color: 'orange' },
       { text: '__，__！', color: 'purple' }
