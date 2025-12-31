@@ -123,20 +123,31 @@ tag:
 
 &emsp;27. [计算机年鉴The Year in Computer Science](https://www.quantamagazine.org/the-year-in-computer-science-20251216/)
 
-&emsp;28. [Sustainable Quantum Computing可持续量子计算](https://cacm.acm.org/research/sustainable-quantum-computing/)
+&emsp;28. [可持续量子计算Sustainable Quantum Computing](https://cacm.acm.org/research/sustainable-quantum-computing/)
 > 1. 量子计算生命周期中碳排放基准测试的机遇与挑战。
 
-&emsp;29. [Technical Perspective: Toward a Formally Verified Compiler for a Synchronous, Functional, Data-Flow Programming Language技术视角：面向同步函数式数据流编程语言的形式化验证编译器](https://cacm.acm.org/research-highlights/technical-perspective-toward-a-formally-verified-compiler-for-a-synchronous-functional-data-flow-programming-language/)
+&emsp;29. [技术视角：面向同步函数式数据流编程语言的形式化验证编译器Technical Perspective: Toward a Formally Verified Compiler for a Synchronous, Functional, Data-Flow Programming Language](https://cacm.acm.org/research-highlights/technical-perspective-toward-a-formally-verified-compiler-for-a-synchronous-functional-data-flow-programming-language/)
 
-&emsp;30. [Techno-Optimism, Techno-Pessimism, and Techno-Realism技术乐观主义、技术悲观主义和技术现实主义](https://cacm.acm.org/opinion/techno-optimism-techno-pessimism-and-techno-realism/)
+&emsp;30. [技术乐观主义、技术悲观主义和技术现实主义Techno-Optimism, Techno-Pessimism, and Techno-Realism](https://cacm.acm.org/opinion/techno-optimism-techno-pessimism-and-techno-realism/)
 > 1. “技术乐观主义”一词由风险投资家马克·安德森在2023年发表的《技术乐观主义宣言》中推广开来。他在文中指出，“技术是人类雄心壮志和成就的荣耀，是进步的先锋，也是我们潜能的实现”，而“……技术会抢走我们的工作，降低我们的工资，加剧不平等，威胁我们的健康，破坏环境，败坏我们的社会，腐蚀我们的孩子，损害我们的人性，威胁我们的未来，并且时刻处于毁灭一切的边缘”的说法则是谎言。该宣言提倡有效加速主义，即呼吁不受限制的技术进步。
 > 2. ACM AM图灵奖得主Yoshua Bengio和Geoffrey Hinton在内的多位计算机领域权威人士近期都提出了通用人工智能（AGI）带来的生存风险问题，并普及了“末日概率”（ P (doom)）的概念，即人工智能导致生存灾难性后果的概率。
 > 3. 这篇文章题为《野外环境中的缺陷奖励函数》，描述了一项尝试，即使用强化学习来训练智能体玩电子游戏。该智能体为了达到目标（即获得高分），甚至愿意不断地点燃船只并原地打转。这篇文章的重点在于解释人工智能在存在缺陷奖励函数的情况下所面临的安全问题。
 > 4. 万维网发明者蒂姆·伯纳斯-李在他的新回忆录《人人共享》（This Is for Everyone）中所写： “在互联网的早期，惊喜和愉悦无处不在，但如今，网络生活带来的焦虑与快乐一样多。”虚假信息、两极分化、选举操纵和社交媒体滥用等问题已成为互联网的代名词。究竟发生了什么？奖励机制出了问题。
 
-&emsp;31. [Collective Intelligence Doesn’t Scale, In-Context Collaborative Learning Does集体智慧无法规模化，而情境化协作学习可以。](https://cacm.acm.org/blogcacm/collective-intelligence-doesnt-scale-in-context-collaborative-learning-does/)重要
+&emsp;31. [集体智慧无法规模化，而情境化协作学习可以。Collective Intelligence Doesn’t Scale, In-Context Collaborative Learning Does](https://cacm.acm.org/blogcacm/collective-intelligence-doesnt-scale-in-context-collaborative-learning-does/)重要
 > 1. 集体智能（CI）
 > 2. 集体智能系统并非采用单一的庞大模型，而是汇集众多智能体来解决维度变化的问题，例如跨环境泛化或跨具身泛化。
 > 3. 大多数CI系统都是由静态智能体构建的：每个智能体都实现固定的输入输出映射，并且最多只能与其他智能体协调预训练策略。这带来了两个根本性的局限性。首先，CI难以在主流加速器（例如通用GPU）上高效实现。其次，更重要的是，由于智能体在推理过程中无法学习，CI的推理时泛化能力很弱：扩展到更多智能体并不能可靠地转化为解决更复杂、未见过的任务或适应新的系统结构的能力。
 > 4. 集体自适应智能（CAI）的用武之地。CAI是一种集体智能形式，在这种智能中，集体本身可以在推理时进行调整：个体不仅协调固定的行为，还会随着任务的展开更新内部状态，从而重新组织角色、沟通模式和策略。
 > 5. 无梯度上下文学习（Gradient-Free In-Context Learning, ICL）是指大型语言模型（LLM）在推理过程中，仅通过输入中提供的少量示例或指令来快速适应新任务，而无需更新模型参数（权重）或进行梯度下降（Gradient Descent）优化。将这一概念从单一模型扩展到群体模型，并将由此产生的机制称为情境内协作学习（ICCL）。每个智能体都会根据其输入、输出以及与其他智能体交换的消息来更新其内部记忆。这使得计算机辅助人工智能（CAI）系统能够在推理时协调角色和通信模式并习得新技能。至关重要的是，由于增加智能体数量会在不改变共享参数的情况下增加总内存和计算量，ICCL使得CAI系统能够在推理时通过在推理时添加智能体来实现扩展，而传统的计算机集成（CI）和单体模型则无法做到这一点。
+
+&emsp;32. [从数据到意义：引领互联网迈入人工智能原生时代From Data to Meaning: Taking the Internet into the AI-Native Era](https://cacm.acm.org/blogcacm/from-data-to-meaning-taking-the-internet-into-the-ai-native-era/)
+
+&emsp;33. [未来趋势：人工智能如何拓展我们对人类运动的理解Future Moves: How AI Expands Our Understanding of Human Motion](https://cacm.acm.org/news/future-moves-how-ai-expands-our-understanding-of-human-motion/)
+> 1. 人工智能 (AI) 正在提高人们对人类运动方式的理解，并推动运动技术的进步：基于 AI 的系统让运动员和舞蹈演员深入了解身体和表现性运动的力学原理；在临床环境中，AI 正在丰富损伤治疗方法，并支持神经退行性疾病的诊断和康复策略。
+> 2. “无标记”动作捕捉技术利用计算机视觉算法直接从视频中识别和提取运动数据。
+
+&emsp;34. [Analog Humanoid Robots from the 18th Century18世纪的模拟人形机器人](https://cacm.acm.org/blogcacm/analog-humanoid-robots-from-the-18th-century/)
+> 1. 法国人雅克·沃康松于1738年展出的模拟自动装置树立了行业标杆。除了他设计的消化鸭之外，他还创造了鼓手和笛手。可惜的是，他的装置并未保存至今。沃康松还参与了1745年胶带控制织布机的研发。
+> 2. 或许最著名的机械象棋棋手是沃尔夫冈·冯·肯佩伦于1769年展出的“土耳其棋手”。然而，它实际上是一个假的自动装置，里面隐藏着一位真人棋手。这台机器和其他一些机器人一样，曾在一些国家展出。
+> 3. 彼得·金辛和大卫·伦琴于1784年创作的扬琴演奏者人偶尤为引人注目，它现藏于巴黎工艺美术博物馆。雅克-德罗家族的三款至今仍可正常运作的自动人偶——绘图员、作家和音乐家（1774年）——被认为是世界上最精密的机器人
