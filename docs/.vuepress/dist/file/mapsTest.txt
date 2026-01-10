@@ -1,0 +1,41 @@
+569563957000-569563986000 r--p 00000000 08:30 5556                       /usr/bin/bash
+569563986000-569563a4f000 r-xp 0002f000 08:30 5556                       /usr/bin/bash
+569563a4f000-569563a87000 r--p 000f8000 08:30 5556                       /usr/bin/bash
+569563a87000-569563a8b000 r--p 00130000 08:30 5556                       /usr/bin/bash
+569563a8b000-569563a94000 rw-p 00134000 08:30 5556                       /usr/bin/bash
+569563a94000-569563a9f000 rw-p 00000000 00:00 0 
+5695895c7000-56958964b000 rw-p 00000000 00:00 0                          [heap]
+737c84600000-737c84878000 r--p 00000000 08:30 16699                      /usr/lib/locale/aa_DJ.utf8/LC_COLLATE
+737c848c4000-737c8491d000 r--p 00000000 08:30 16702                      /usr/lib/locale/aa_DJ.utf8/LC_CTYPE
+737c8491d000-737c84920000 rw-p 00000000 00:00 0 
+737c84920000-737c84948000 r--p 00000000 08:30 22289                      /usr/lib/x86_64-linux-gnu/libc.so.6
+737c84948000-737c84aa2000 r-xp 00028000 08:30 22289                      /usr/lib/x86_64-linux-gnu/libc.so.6
+737c84aa2000-737c84af8000 r--p 00182000 08:30 22289                      /usr/lib/x86_64-linux-gnu/libc.so.6
+737c84af8000-737c84afc000 r--p 001d7000 08:30 22289                      /usr/lib/x86_64-linux-gnu/libc.so.6
+737c84afc000-737c84afe000 rw-p 001db000 08:30 22289                      /usr/lib/x86_64-linux-gnu/libc.so.6
+737c84afe000-737c84b0b000 rw-p 00000000 00:00 0 
+737c84b0b000-737c84b1a000 r--p 00000000 08:30 29538                      /usr/lib/x86_64-linux-gnu/libtinfo.so.6.5
+737c84b1a000-737c84b2d000 r-xp 0000f000 08:30 29538                      /usr/lib/x86_64-linux-gnu/libtinfo.so.6.5
+737c84b2d000-737c84b3b000 r--p 00022000 08:30 29538                      /usr/lib/x86_64-linux-gnu/libtinfo.so.6.5
+737c84b3b000-737c84b3f000 r--p 00030000 08:30 29538                      /usr/lib/x86_64-linux-gnu/libtinfo.so.6.5
+737c84b3f000-737c84b40000 rw-p 00034000 08:30 29538                      /usr/lib/x86_64-linux-gnu/libtinfo.so.6.5
+737c84b41000-737c84b42000 r--p 00000000 08:30 17155                      /usr/lib/locale/aa_ET/LC_NUMERIC
+737c84b42000-737c84b43000 r--p 00000000 08:30 33608                      /usr/lib/locale/en_US.utf8/LC_TIME
+737c84b43000-737c84b44000 r--p 00000000 08:30 33212                      /usr/lib/locale/chr_US/LC_MONETARY
+737c84b44000-737c84b45000 r--p 00000000 08:30 33450                      /usr/lib/locale/en_AG/LC_MESSAGES/SYS_LC_MESSAGES
+737c84b45000-737c84b46000 r--p 00000000 08:30 33213                      /usr/lib/locale/chr_US/LC_PAPER
+737c84b46000-737c84b47000 r--p 00000000 08:30 33091                      /usr/lib/locale/bi_VU/LC_NAME
+737c84b47000-737c84b48000 r--p 00000000 08:30 33606                      /usr/lib/locale/en_US.utf8/LC_ADDRESS
+737c84b48000-737c84b49000 r--p 00000000 08:30 33214                      /usr/lib/locale/chr_US/LC_TELEPHONE
+737c84b49000-737c84b4a000 r--p 00000000 08:30 33210                      /usr/lib/locale/chr_US/LC_MEASUREMENT
+737c84b4a000-737c84b51000 r--s 00000000 08:30 22276                      /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+737c84b51000-737c84b52000 r--p 00000000 08:30 33607                      /usr/lib/locale/en_US.utf8/LC_IDENTIFICATION
+737c84b52000-737c84b54000 rw-p 00000000 00:00 0 
+737c84b54000-737c84b55000 r--p 00000000 08:30 22286                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+737c84b55000-737c84b7c000 r-xp 00001000 08:30 22286                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+737c84b7c000-737c84b87000 r--p 00028000 08:30 22286                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+737c84b87000-737c84b89000 r--p 00033000 08:30 22286                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+737c84b89000-737c84b8b000 rw-p 00035000 08:30 22286                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffe6eefb000-7ffe6ef1c000 rw-p 00000000 00:00 0                          [stack]
+7ffe6ef3a000-7ffe6ef3e000 r--p 00000000 00:00 0                          [vvar]
+7ffe6ef3e000-7ffe6ef40000 r-xp 00000000 00:00 0                          [vdso]

@@ -23,9 +23,9 @@ tag:
 
 <link rel="stylesheet" href="/css/font-style.css">
 
-### 数据库
+# 数据库
 
-#### MySQL（没人觉得这个 DB 很诡异么？）
+## MySQL（没人觉得这个 DB 很诡异么？）
 
 ```python
 import pymysql  
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     con.close() # 关闭连接
 ```
 
-#### MongoDB（MySQL 严父）
+## MongoDB（MySQL 严父）
 
 ```python
 import pymongo  
@@ -203,9 +203,9 @@ result2 = mydbMap.delete_many({"alexa": {"$gt": 80}})
 # $jsonSchema JSON模式匹配   {"$jsonSchema": {"bsonType": "object"}}
 ```
 
-#### Faiss（超绝内存型向量数据库）
+## Faiss（超绝内存型向量数据库）
 
-##### 简单线性索引
+### 简单线性索引
 
 ```python
 import faiss  
@@ -256,7 +256,7 @@ if __name__ == "__main__":
     simple_index()
 ```
 
-##### 自定义索引 ID
+### 自定义索引 ID
 
 ```python
 import faiss  
@@ -278,7 +278,7 @@ if __name__ == "__main__":
     test01()
 ```
 
-##### 聚类倒排索引
+### 聚类倒排索引
 
 ```python
 import faiss  
@@ -313,7 +313,7 @@ if __name__ == '__main__':
     test01()
 ```
 
-##### 聚类倒排量化索引
+### 聚类倒排量化索引
 
 ```python
 import faiss  
@@ -353,7 +353,7 @@ if __name__ == "__main__":
     test01()
 ```
 
-##### GPU 加速（仅限Linux平台）
+### GPU 加速（仅限Linux平台）
 
 ```python
 import faiss  
@@ -385,9 +385,9 @@ if __name__ == "__main__":
     test01()
 ```
 
-#### SQLAlchemy
+## SQLAlchemy
 
-##### 简单的查询
+### 简单的查询
 
 ```python
 import sqlalchemy  
@@ -477,7 +477,7 @@ with en.connect() as con:
     con.commit()
 ```
 
-##### 复杂的查询
+### 复杂的查询
 
 ```python
 from typing import Tuple  
@@ -549,7 +549,7 @@ if __name__ == "__main__":
     meta_data.create_all(en)
 ```
 
-##### ORM 的一切
+### ORM 的一切
 
 ```python
 from typing import Type, List  

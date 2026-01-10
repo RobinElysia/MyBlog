@@ -1,0 +1,43 @@
+11:   -bash
+0000569563957000    188K r---- bash
+0000569563986000    804K r-x-- bash
+0000569563a4f000    224K r---- bash
+0000569563a87000     16K r---- bash
+0000569563a8b000     36K rw--- bash
+0000569563a94000     44K rw---   [ anon ]
+00005695895c7000    528K rw---   [ anon ]
+0000737c84600000   2528K r---- LC_COLLATE
+0000737c848c4000    356K r---- LC_CTYPE
+0000737c8491d000     12K rw---   [ anon ]
+0000737c84920000    160K r---- libc.so.6
+0000737c84948000   1384K r-x-- libc.so.6
+0000737c84aa2000    344K r---- libc.so.6
+0000737c84af8000     16K r---- libc.so.6
+0000737c84afc000      8K rw--- libc.so.6
+0000737c84afe000     52K rw---   [ anon ]
+0000737c84b0b000     60K r---- libtinfo.so.6.5
+0000737c84b1a000     76K r-x-- libtinfo.so.6.5
+0000737c84b2d000     56K r---- libtinfo.so.6.5
+0000737c84b3b000     16K r---- libtinfo.so.6.5
+0000737c84b3f000      4K rw--- libtinfo.so.6.5
+0000737c84b41000      4K r---- LC_NUMERIC
+0000737c84b42000      4K r---- LC_TIME
+0000737c84b43000      4K r---- LC_MONETARY
+0000737c84b44000      4K r---- SYS_LC_MESSAGES
+0000737c84b45000      4K r---- LC_PAPER
+0000737c84b46000      4K r---- LC_NAME
+0000737c84b47000      4K r---- LC_ADDRESS
+0000737c84b48000      4K r---- LC_TELEPHONE
+0000737c84b49000      4K r---- LC_MEASUREMENT
+0000737c84b4a000     28K r--s- gconv-modules.cache
+0000737c84b51000      4K r---- LC_IDENTIFICATION
+0000737c84b52000      8K rw---   [ anon ]
+0000737c84b54000      4K r---- ld-linux-x86-64.so.2
+0000737c84b55000    156K r-x-- ld-linux-x86-64.so.2
+0000737c84b7c000     44K r---- ld-linux-x86-64.so.2
+0000737c84b87000      8K r---- ld-linux-x86-64.so.2
+0000737c84b89000      8K rw--- ld-linux-x86-64.so.2
+00007ffe6eefb000    132K rw---   [ stack ]
+00007ffe6ef3a000     16K r----   [ anon ]
+00007ffe6ef3e000      8K r-x--   [ anon ]
+ total             7364K

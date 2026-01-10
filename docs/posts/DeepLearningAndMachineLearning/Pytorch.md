@@ -23,12 +23,12 @@ tag:
 
 <link rel="stylesheet" href="/css/font-style.css">
 
-## Pytorch
-### 前置知识
+# Pytorch
+## 前置知识
 参考[Perceptron_PytorchLib 项目目录](https://github.com/RobinElysia/PythonLibAction/tree/main/pytorch/Perceptron_PytorchLib)，包含手操微分、手写各种损失函数、激活函数、各种梯度算法、三层网络和BP反向传播等等。
 
-### Pytorch Lib
-#### CreateTensor（Tensor基本使用）
+## Pytorch Lib
+### CreateTensor（Tensor基本使用）
 ```python
 import torch
 import numpy as np
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     # perm_tensor()
 ```
 
-#### TransAndAlgTensor（Tensor的转换与运算）
+### TransAndAlgTensor（Tensor的转换与运算）
 ```python
 import torch
 import numpy as np
@@ -408,7 +408,7 @@ if __name__ == '__main__':
     # Alg_Func_tensor()
 ```
 
-#### IndexAndChangeTensor（Tensor维度形状改变）
+### IndexAndChangeTensor（Tensor维度形状改变）
 ```python
 import torch
 import numpy as np
@@ -522,7 +522,7 @@ if __name__ == '__main__':
     # Splicing_tensor()
 ```
 
-#### AutoGrad（动态计算图微分入门）
+### AutoGrad（动态计算图微分入门）
 ```python
 import torch
 
@@ -583,7 +583,7 @@ if __name__ == "__main__":
     other_detach_grad_tensor()
 ```
 
-#### ActFunc（Torch的激活函数）
+### ActFunc（Torch的激活函数）
 ```python
 import torch
 
@@ -610,7 +610,7 @@ if __name__ == '__main__':
     NN_Sigmoid()
 ```
 
-#### ValueInitAndDropout（w与b的初始化与正则化）
+### ValueInitAndDropout（w与b的初始化与正则化）
 ```python
 import torch.nn as nn
 import torch
@@ -722,7 +722,7 @@ if __name__ == '__main__':
     kaiming_init()
 ```
 
-#### ClassificationLoss（分类）
+### ClassificationLoss（分类）
 ```python
 import torch
 import torch.nn as nn
@@ -760,7 +760,7 @@ if __name__ == "__main__":
     Regression_NN()
 ```
 
-#### AndRegressionLoss（回归）
+### AndRegressionLoss（回归）
 ```python
 import torch.nn as nn
 import torch
@@ -787,9 +787,9 @@ if __name__ == '__main__':
     get_loss()
 ```
 
-### optim优化器
+## optim优化器
 
-#### 动量优化器
+### 动量优化器
 ```python
 import torch
 import torch.nn as nn
@@ -939,7 +939,7 @@ for momentum in [0, 0.5, 0.9]:
     print(f"Momentum={momentum}: 最终位置={positions[-1]:.6f}, 迭代次数={len(positions)}")
 ```
 
-#### 学习率衰减优化器
+### 学习率衰减优化器
 ```python
 import torch
 import torch.nn as nn
@@ -1246,8 +1246,8 @@ for epoch in range(start_epoch, start_epoch + 5):
 print("\n总结：学习率衰减策略的选择取决于具体任务和数据集特性！")
 ```
 
-### practice（实践）
-#### LinearDemo（线性回归简单实现）
+## practice（实践）
+### LinearDemo（线性回归简单实现）
 ```python
 import torch
 import matplotlib.pyplot as plt
@@ -1299,7 +1299,7 @@ plt.ylabel("loss")
 plt.show()
 ```
 
-#### 手动实现自定义神经网络
+### 手动实现自定义神经网络
 ```python
 import torch
 import torch.nn as nn
@@ -1363,7 +1363,7 @@ if __name__ == "__main__":
     summary(net, (2, 2), batch_size=10, device="cuda")
 ```
 
-#### torch自带实现自定义神经网络
+### torch自带实现自定义神经网络
 ```python
 import torch.nn as nn
 import torch

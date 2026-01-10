@@ -23,15 +23,15 @@ tag:
 
 <link rel="stylesheet" href="/css/font-style.css">
 
-### Ollama Modelfile 权威指南
+# Ollama Modelfile 权威指南
 
 > 本指南面向想要在 Ollama 平台上打包、部署与调试模型的开发者与运维人员。涵盖 Modelfile 语法、常用字段、进阶技巧、示例与常见问题排查。内容以实践为导向，兼顾安全与可维护性。
 
-#### 1. 简介：什么是 Modelfile
+## 1. 简介：什么是 Modelfile
 
 Modelfile 是用来告诉 Ollama 如何从基础镜像或模型文件构建运行时镜像和服务的声明性配置文件。它类似于 Dockerfile，但专注于 AI 模型的运行参数、模板与推理相关的配置。通过规范化的字段，开发者能指定模型来源、输入输出模板、运行时参数和资源要求。
 
-#### 2. Modelfile 的基本结构
+## 2. Modelfile 的基本结构
 
 一个常见的 Modelfile 通常包含：
 
@@ -59,29 +59,29 @@ PARAMETER stop "<|im_end|>"
 
 > 说明：不同 Ollama 版本对 Modelfile 的支持字段可能略有差异，建议在部署前参照你的 Ollama 服务版本文档。
 
-#### 3. 常用字段详解
+## 3. 常用字段详解
 
-##### FROM
+### FROM
 
 - 指定基础模型路径或镜像，例如一个本地模型目录或系统提供的基础镜像。
 - 可以是相对路径或绝对路径，视平台而定。
 
-##### TEMPLATE
+### TEMPLATE
 
 - 用于定义对话格式（prompt template）。通常用多行文本包裹，支持占位符如 `{{ .System }}`, `{{ range .Messages }}` 等。
 - 模板决定模型输入怎样被序列化到模型上下文，关系到 token 使用和输出一致性。
 
-##### PARAMETER
+### PARAMETER
 
 - 用于定义运行时参数。每一行设置一个键值对。
 - 常见参数：`temperature`, `top_p`, `max_tokens`, `stop`, `num_beams`, `repetition_penalty` 等。
 - 值可以是数字、字符串或布尔值，取决于参数类型。
 
-##### STOP
+### STOP
 
 - 有些实现把 stop 作为专门字段。它用于定义输出终止符号或 token 序列，避免生成过长或滥生成。
 
-#### 4. 模板（TEMPLATE）与停止符（STOP）
+## 4. 模板（TEMPLATE）与停止符（STOP）
 
 - TEMPLATE 的设计原则：**简洁**、**确定性**、**低 token 消耗**。
 - 使用系统（system）角色放置指令与安全限制，用户（user）角色放置真实输入。
@@ -149,7 +149,7 @@ TEMPLATE """<|im_start|>system
 
 ```
 
-#### 5. 参数（PARAMETER）详解与推荐值
+## 5. 参数（PARAMETER）详解与推荐值
 
 - `temperature`（通常 0.0 - 1.0）: 控制随机性；任务需要确定性时设为 0；需要创造性时设高（0.7-1.0）。
 - `top_p`（0.0 - 1.0）: 过滤候选 token 的累积概率阈值；与 temperature 联合使用可更好控制输出。
@@ -167,9 +167,9 @@ PARAMETER max_tokens 512
 PARAMETER stop "<|im_end|>"
 ```
 
-#### 6. 常见使用场景示例
+## 6. 常见使用场景示例
 
-##### 6.1 简单推理服务（聊天机器人）
+### 6.1 简单推理服务（聊天机器人）
 
 ```bash
 FROM /opt/model/ggml-model
@@ -188,7 +188,7 @@ PARAMETER max_tokens 512
 PARAMETER stop "<|im_end|>"
 ```
 
-##### 6.2 指令微调（SFT）后的模型部署
+### 6.2 指令微调（SFT）后的模型部署
 
 对 SFT 模型，建议：
 - 在 TEMPLATE 中明确 system 指令，避免模型偏离调优目标。
@@ -205,7 +205,7 @@ PARAMETER temperature 0.0
 PARAMETER max_tokens 400
 ```
 
-##### 6.3 大模型量化与低内存部署
+### 6.3 大模型量化与低内存部署
 
 - 使用量化（8-bit、4-bit）以降低显存需求。
 - 在 Modelfile 上标注模型已量化且只适用特定后端（例如 GGML、bitsandbytes）。
@@ -229,9 +229,9 @@ PARAMETER backend ggml
 
 > 提示：量化后测试模型输出一致性，必要时在参数中适当增加 `repetition_penalty`。
 
-#### 7. 附录：示例 Modelfile 热门变体
+## 7. 附录：示例 Modelfile 热门变体
 
-##### 最小可用 Modelfile
+### 最小可用 Modelfile
 
 ```bash
 FROM /opt/model/small-ggml
@@ -248,7 +248,7 @@ PARAMETER max_tokens 256
 PARAMETER stop "<|im_end|>"
 ```
 
-##### 完整的 Demo
+### 完整的 Demo
 
 ```bash
 FROM /opt/model/qwen2.5-1.8b-instruct

@@ -23,11 +23,11 @@ tag:
 
 <link rel="stylesheet" href="/css/font-style.css">
 
-### 数据处理
+# 数据处理
 
-#### JSON（万物基于JSON）
+## JSON（万物基于JSON）
 
-##### 代码
+### 代码
 
 ```python
 import json as json  
@@ -59,7 +59,7 @@ with open("OutTest.json", "w", encoding="utf-8") as f:
     )
 ```
 
-##### 测试 JSON 文件
+### 测试 JSON 文件
 
 ```JSON
 {
@@ -77,9 +77,9 @@ with open("OutTest.json", "w", encoding="utf-8") as f:
 }
 ```
 
-#### XML（谁？不熟，感觉是Java佬最爱）
+## XML（谁？不熟，感觉是Java佬最爱）
 
-##### XML 数据清洗
+### XML 数据清洗
 
 ```python
 import xml.etree.ElementTree as et  
@@ -140,7 +140,7 @@ print(par)
 # 剩下的和解析xml文件一样，par 是一个 ElementTree 对象
 ```
 
-##### 测试 XML 文件
+### 测试 XML 文件
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -164,9 +164,9 @@ print(par)
 
 ```
 
-#### HTML（BeautifulSoup，漂亮的汤（
+## HTML（BeautifulSoup，漂亮的汤（
 
-##### HTML 数据清洗
+### HTML 数据清洗
 
 ```python
 from bs4 import BeautifulSoup  
@@ -254,7 +254,7 @@ print("find", soup.find(attrs={"class": "aaa"}))
 print("find", soup.find(string="章节1"))
 ```
 
-##### 测试 HTML 文件
+### 测试 HTML 文件
 
 ```HTML
 <!DOCTYPE html>
@@ -319,9 +319,9 @@ print("find", soup.find(string="章节1"))
 
 ```
 
-#### pandas（你为什么不学熊猫？）
+## pandas（你为什么不学熊猫？）
 
-##### 样本数据生成
+### 样本数据生成
 
 ```python
 import pandas as pd  
@@ -404,7 +404,7 @@ print("\n缺失值统计:")
 print(df.isnull().sum())
 ```
 
-##### Series
+### Series
 
 ```python
 import pandas as pd  
@@ -514,7 +514,7 @@ s10 = s8[~mask] # 获取非2020年的第一天的数据
 print(s8.nlargest(5))
 ```
 
-##### DataFrame
+### DataFrame
 
 ```python
 import numpy as np  
@@ -607,7 +607,7 @@ print(df.sort_values(by="col1", ascending=False)) # 比如有总分这一列，�
 print(df.nlargest(3, "col1")) # 取最大的3行
 ```
 
-##### 文件操作
+### 文件操作
 
 ```python
 import pandas as pd  
@@ -637,7 +637,7 @@ df_json.to_json("new_json.json", orient="records", indent=4, force_ascii=False)
 # force_ascii=False 表示将所有非ASCII字符转换为Unicode转义序列
 ```
 
-##### 缺失值
+### 缺失值
 
 ```python
 import numpy as np  
@@ -695,7 +695,7 @@ df = df.bfill() # back fill，后一个值填充
 print(df[["客户评分"]])
 ```
 
-##### 重复值与类型转换
+### 重复值与类型转换
 
 ```python
 import pandas as pd  
@@ -725,7 +725,7 @@ df[["部门"]] = df[["部门"]].astype("category") # 转换为分类型
 print("转换后的：\n", df.dtypes)
 ```
 
-##### 数据变形
+### 数据变形
 
 ```python
 import pandas as pd  
@@ -759,7 +759,7 @@ df[["Frist Name","Last Name"]] = df["Name"].str.split(" ", expand=True)
 print(df)
 ```
 
-##### 数据分箱
+### 数据分箱
 
 ```python
 import pandas as pd  
@@ -815,7 +815,7 @@ print(df) # 重命名列和索引, 设置为 inplace=true 会修改原数据
 # df.index = [1,2,3,4,5,6,7,8,9,10...] ，需要写全
 ```
 
-##### 时间数据处理
+### 时间数据处理
 
 ```python
 import pandas as pd  
@@ -877,7 +877,7 @@ print(df)
 print(df[["客户评分", "利润"]].resample("QE").mean()) # 季度平均重采样
 ```
 
-##### 分类聚合
+### 分类聚合
 
 ```python
 import pandas as pd  
