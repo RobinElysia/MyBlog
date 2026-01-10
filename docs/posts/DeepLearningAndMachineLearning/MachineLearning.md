@@ -17,7 +17,7 @@ head:
 category:
   - RobinElysia
 tag:
-  - Machine Learning
+  - DL And ML
 
 ---
 
