@@ -1,0 +1,56 @@
+import{_ as s,c as a,h as e,a as c}from"./app-tCuIGYdk.js";const p={};function l(i,n){return c(),a("div",null,n[0]||(n[0]=[e(`<link rel="stylesheet" href="/css/font-style.css"><h3 id="linux-使用技巧" tabindex="-1"><a class="header-anchor" href="#linux-使用技巧"><span>Linux 使用技巧</span></a></h3><h4 id="vim" tabindex="-1"><a class="header-anchor" href="#vim"><span>Vim</span></a></h4><p>在默认模式下 <code>gg</code> 跳转到文件开头；<code>G</code> 跳转到末尾；<code>数字 + G</code> 跳转到指定行数 默认模式下 <code>H</code> 跳转到当前窗口首行；<code>M</code> 跳转到中间；<code>L</code> 最后行 默认模式下输入 <code>/关键字</code> 可以进行搜索；<code>n</code> 下一个；<code>N</code> 上一个结果 默认模式下输入 <code>?关键字</code> 可以进行向上搜索 默认模式下输入 <code>:changes</code> 查看文件编辑历史</p><p>buffer 默认模式下输入 <code>:e 文件</code>，<code>:ls</code> 查看所有打开的<code>buffer</code>文件，我们可以使用 <code>:b 编号</code> 实现快速切换，或者使用<code>:bn</code>和<code>:bp</code>进行切换；关闭此<code>buffer</code>使用<code>bd</code> windows 默认模式下输入 <code>:vs</code> 左右分屏、<code>:sp</code>上下分屏；多次按 <code>ctrl+w</code> 进行切换； tabe 默认模式下输入 <code>:tabe 文件名</code> 创建一个新的页面，你可以打开多个文件。使用<code>先g后t</code>进行切换</p><h3 id="正则表达式-讨厌re的原因是因为它是设计给天才看的" tabindex="-1"><a class="header-anchor" href="#正则表达式-讨厌re的原因是因为它是设计给天才看的"><span>正则表达式（讨厌re的原因是因为它是设计给天才看的）</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 单字符限定</span></span>
+<span class="line">? 代表前 <span class="token number">1</span> 个字符或 <span class="token number">0</span> 个字符</span>
+<span class="line">	abb?：ab或者abb</span>
+<span class="line"></span>
+<span class="line">* 代表匹配 <span class="token number">0</span> 个、 <span class="token number">1</span> 个或 多个字符</span>
+<span class="line">	ac*b：acb、ab、accccb<span class="token punctuation">..</span>.</span>
+<span class="line">	</span>
+<span class="line">+ 代表匹配 <span class="token number">1</span> 个以上的字符个数</span>
+<span class="line">	ac+b：acb、accb、acccb<span class="token punctuation">..</span>.</span>
+<span class="line"></span>
+<span class="line">限定出现次数：</span>
+<span class="line">	ac<span class="token punctuation">{</span><span class="token number">2,6</span><span class="token punctuation">}</span>b：accb、acccb、accccb、acccccb、accccccb <span class="token comment"># 2到6个c</span></span>
+<span class="line">	ac<span class="token punctuation">{</span><span class="token number">2</span>,<span class="token punctuation">}</span>b：accb、acccb、accccb<span class="token punctuation">..</span>. <span class="token comment"># 2个以上</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 多字符限定</span></span>
+<span class="line">使用 <span class="token punctuation">(</span>.<span class="token punctuation">)</span> 括起来：</span>
+<span class="line"></span>
+<span class="line"><span class="token punctuation">(</span>ab<span class="token punctuation">)</span>+b：abb、ababb、abababb<span class="token punctuation">..</span>. <span class="token comment"># ab整个字符重复出现多次，多字符限定</span></span>
+<span class="line"><span class="token comment"># 其他的限定符：？、* 同理</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 或运算</span></span>
+<span class="line">a <span class="token punctuation">(</span>cat<span class="token operator">|</span>dog<span class="token punctuation">)</span>：a <span class="token function">cat</span> 或者 a dog</span>
+<span class="line">a <span class="token function">cat</span><span class="token operator">|</span>dog：a <span class="token function">cat</span> 或者 dog</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 字符类</span></span>
+<span class="line">限定仅用 指定字符 进行组成的字符串</span>
+<span class="line"><span class="token punctuation">[</span>abc<span class="token punctuation">]</span>+：abc、aabbcc、abccba</span>
+<span class="line"><span class="token punctuation">[</span>a-zA-Z0-9<span class="token punctuation">]</span>+：a到z、A到Z、0到9</span>
+<span class="line"><span class="token punctuation">[</span>^0-9<span class="token punctuation">]</span>+：除了0到9</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 元字符</span></span>
+<span class="line"><span class="token punctuation">\\</span>d+：数字</span>
+<span class="line"><span class="token punctuation">\\</span>w+：单词</span>
+<span class="line"><span class="token punctuation">\\</span>s：tap和换行</span>
+<span class="line"><span class="token punctuation">\\</span>D+：非数字</span>
+<span class="line"><span class="token punctuation">\\</span>W+：非单词</span>
+<span class="line"><span class="token punctuation">\\</span>S+：非空白字符</span>
+<span class="line">.*：除了换行其余的字符</span>
+<span class="line">^a：匹配行首的a</span>
+<span class="line">b$：匹配行尾b</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># r&#39;&#39; r代表这是py得原始字符、与之对应的就是普通字符</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="实践" tabindex="-1"><a class="header-anchor" href="#实践"><span>实践</span></a></h4><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"></span>
+<span class="line"><span class="token comment"># 匹配所有 HTML 标签</span></span>
+<span class="line"><span class="token operator">&lt;</span>.+?<span class="token operator">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># RGB 匹配</span></span>
+<span class="line"><span class="token comment">#[0-9A-Fa-f]{6}\\b</span></span>
+<span class="line"><span class="token comment"># 单词和空格间的位置。例如， &#39;er\\b&#39; 可以匹配&quot;never&quot; 中的 &#39;er&#39;，但不能匹配 &quot;verb&quot; 中的 &#39;er&#39;。</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># IPV4 地址</span></span>
+<span class="line"><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">[</span><span class="token number">0</span>-5<span class="token punctuation">]</span><span class="token operator">|</span><span class="token number">2</span><span class="token punctuation">[</span><span class="token number">0</span>-4<span class="token punctuation">]</span><span class="token punctuation">\\</span>d<span class="token operator">|</span><span class="token punctuation">[</span>01<span class="token punctuation">]</span>?<span class="token punctuation">\\</span>d?<span class="token punctuation">\\</span>d<span class="token punctuation">\\</span>.<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">[</span><span class="token number">0</span>-5<span class="token punctuation">]</span><span class="token operator">|</span><span class="token number">2</span><span class="token punctuation">[</span><span class="token number">0</span>-4<span class="token punctuation">]</span><span class="token punctuation">\\</span>d<span class="token operator">|</span><span class="token punctuation">[</span>01<span class="token punctuation">]</span>?<span class="token punctuation">\\</span>d?<span class="token punctuation">\\</span>d<span class="token punctuation">)</span><span class="token punctuation">\\</span>b</span>
+<span class="line"><span class="token comment"># (25[0-5]|2[0-4]\\d|[01]?\\d?\\d\\.){3} 代表匹配 A.B.C.</span></span>
+<span class="line"><span class="token comment"># (25[0-5]|2[0-4]\\d|[01]?\\d?\\d) 代表匹配 D</span></span>
+<span class="line"><span class="token comment"># 加上 \\b 后，相连其他不会被匹配，比如：192.168.0.1abc</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,9)]))}const o=s(p,[["render",l]]),d=JSON.parse('{"path":"/posts/DeepLearningAndMachineLearning/reAndLinux.html","title":"正则与 Linux 基本使用","lang":"en-US","frontmatter":{"title":"正则与 Linux 基本使用","description":"正则与 Linux 基本使用","date":"2026-1-10","timeline":true,"head":[["meta",{"name":"keywords","content":"正则与 Linux 基本使用"}],["meta",{"name":"description","content":"正则与 Linux 基本使用"}],["meta",{"name":"author","content":"RobinElysia"}]],"category":["RobinElysia"],"tag":["DL And ML"]},"headers":[{"level":3,"title":"Linux 使用技巧","slug":"linux-使用技巧","link":"#linux-使用技巧","children":[]},{"level":3,"title":"正则表达式（讨厌re的原因是因为它是设计给天才看的）","slug":"正则表达式-讨厌re的原因是因为它是设计给天才看的","link":"#正则表达式-讨厌re的原因是因为它是设计给天才看的","children":[]}],"git":{"updatedTime":1768056600000,"contributors":[{"name":"qwp_p","username":"","email":"qwp20060309@outlook.com","commits":2}],"changelog":[{"hash":"d8b619b6210a7978a63cc8f79cdfc4e55676d4f5","time":1768056600000,"email":"qwp20060309@outlook.com","author":"qwp_p","message":"docs(posts): rename DL folder to DeepLearningAndMachineLearning and update tags"},{"hash":"bb725b7d3fadc33e5a1844639eaea62a7858b38c","time":1768056006000,"email":"qwp20060309@outlook.com","author":"qwp_p","message":"docs(guide): add comprehensive guides for Ollama ModelFile and Linux regex usage"}]},"filePathRelative":"posts/DeepLearningAndMachineLearning/reAndLinux.md","excerpt":"<link rel=\\"stylesheet\\" href=\\"/css/font-style.css\\">\\n<h3>Linux 使用技巧</h3>\\n<h4>Vim</h4>\\n<p>在默认模式下 <code>gg</code> 跳转到文件开头；<code>G</code> 跳转到末尾；<code>数字 + G</code> 跳转到指定行数\\n默认模式下 <code>H</code> 跳转到当前窗口首行；<code>M</code> 跳转到中间；<code>L</code> 最后行\\n默认模式下输入 <code>/关键字</code> 可以进行搜索；<code>n</code> 下一个；<code>N</code> 上一个结果\\n默认模式下输入 <code>?关键字</code> 可以进行向上搜索\\n默认模式下输入 <code>:changes</code> 查看文件编辑历史</p>"}');export{o as comp,d as data};
