@@ -32,7 +32,7 @@
       <div class="content-section fade-in-delay-1">
         <h3 class="section-title">技术栈</h3>
         <p>{{ robinTechDesc }}</p>
-        <a href="http://learn.elysia.wiki" target="_blank" class="tech-link">技术文章请访问我们的飞书 &rarr;</a>
+        <a href="https://hcnxcb6dq341.feishu.cn/docx/BgV7d6F1kozzWJx4SqYcfzxOnVf" target="_blank" class="tech-link">技术文章请访问我们的飞书 &rarr;</a>
       </div>
     </div>
 
