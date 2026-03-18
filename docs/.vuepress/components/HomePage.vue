@@ -12,7 +12,7 @@
           >
           <div class="logo-glow"></div>
         </div>
-        <h1 class="title" ref="title">RSD</h1>
+        <h1 class="title" ref="title">RobinElysia</h1>
         <p class="tagline" ref="tagline">We are always devout scholars</p>
         
         <div class="actions">
@@ -36,7 +36,7 @@
     </div>
 
     <footer class="footer">
-      RobinElysia、叁玖、DLQC | Copyright © 2025 qwp Community
+      RobinElysia | Copyright © 2025 qwp Community
     </footer>
   </div>
 </template>
@@ -108,7 +108,7 @@ onMounted(async () => {
 
   // 打字机效果
   if (title.value && tagline.value) {
-    await typewriterEffect(title.value, 'RSD', 150)
+    await typewriterEffect(title.value, 'RobinElysia', 150)
     await typewriterEffect(tagline.value, 'We are always devout scholars', 50)
   }
   

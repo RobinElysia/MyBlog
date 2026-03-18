@@ -7,8 +7,8 @@ import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: "RSD's Blog",
-  description: "RSD's blog is a personal blog of three people.",
+  title: "RobinElysia's Blog",
+  description: "RobinElysia's personal blog",
   head: [['link', { rel: 'icon', href: './assets/img/Rlogo.png' }]],
 
   theme: defaultTheme({

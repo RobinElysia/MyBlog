@@ -56,35 +56,6 @@
         <a href="www.sanjiuctf.cn" target="_blank" class="tech-link">水友の博客 &rarr;</a>
       </div>
     </div>
-
-    <!-- DLQC卡片 -->
-    <div class="member-card fade-in" ref="dlqcCard" @mousemove="e => handleMouseMove(e, $refs.dlqcCard)">
-      <img src="/assets/img/DLQC.jpg" alt="DLQC" class="member-avatar">
-      <h2 class="member-name" ref="dlqcName">DLQC</h2>
-      <p class="member-title">Web Security Researcher | INFJ/ISFJ</p>
-      
-      <div class="skills-container">
-        <span v-for="skill in dlqcSkills" :key="skill" class="skill-tag">
-          {{ skill }}
-        </span>
-      </div>
-
-      <div class="content-section fade-in-delay-1">
-        <h3 class="section-title">生活</h3>
-        <p>{{ dlqcLifeDesc }}</p>
-      </div>
-
-      <div class="content-section fade-in-delay-2">
-        <h3 class="section-title">技术</h3>
-        <p>{{ dlqcTechDesc }}</p>
-      </div>
-
-      <div class="content-section fade-in-delay-3">
-        <div class="quote">
-          路漫漫其修远兮兮兮兮兮兮……让我们一起努力吧！ᗜ ᴗ ᗜ 
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -106,7 +77,7 @@ const robinTechDesc = `自学 CS，专注于 Java 后端开发（可能），涉
 
 const robinBooks = [
   '不拘一格','窄门','精神分析引论','查拉图斯特拉如是说','莎士比亚商籁','雷军创业思考','在春天走进果园','自我与本我',
-  '那个夏天我们遇见了天使','西线无战事','让我们来谈谈我们的灵魂','局外人','人之觉醒','西西弗神话','悉达多','影响力',
+  '那个夏天我们遇见了天使','西线无战事','让我们来谈谈我们的灵魂','局外人','我的世界下雪了','西西弗神话','悉达多','影响力',
   '万物生而有翼', '我身上有个不可战胜的夏天','莉莉亚娜不可战胜的夏天'
 ]
 
