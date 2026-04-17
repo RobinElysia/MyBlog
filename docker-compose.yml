@@ -1,0 +1,13 @@
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: myblog
+    restart: unless-stopped
+    ports:
+      - "222:80"
+      - "223:443"
+    volumes:
+      - ./docker/certs/server.crt:/etc/nginx/certs/server.crt:ro
+      - ./docker/certs/server.key:/etc/nginx/certs/server.key:ro

@@ -1,0 +1,12 @@
+node_modules
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
+
+docker/certs/*.crt
+docker/certs/*.key
