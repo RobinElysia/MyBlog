@@ -2,6 +2,8 @@ FROM node:20-bookworm-slim AS build
 
 WORKDIR /app
 
+ENV NODE_OPTIONS=--max-old-space-size=4096
+
 RUN corepack enable
 
 COPY package.json pnpm-lock.yaml ./
