@@ -51,11 +51,11 @@ defineProps({
 
 .article-wrapper {
   font-family: RobinElysia, qwp;
-  @include mixins.content-wrapper;
   padding-top: calc(var(--navbar-height) + 1rem) !important;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+  @include mixins.content-wrapper;
 }
 
 .article {

@@ -34,5 +34,5 @@ const routePath = useRoutePath()
 </template>
 
 <style lang="scss">
-@import '../css/Category.scss';
+@use '../css/Category';
 </style>

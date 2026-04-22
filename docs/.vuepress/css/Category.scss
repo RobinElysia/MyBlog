@@ -2,12 +2,12 @@
 @use '../public/css/font.css';
 
 .category-wrapper {
-  @include mixins.content-wrapper;
   padding-top: calc(var(--navbar-height) + 2rem) !important;
   padding-bottom: 2rem !important;
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
+  @include mixins.content-wrapper;
   
   &::before {
     content: '文章分类';
